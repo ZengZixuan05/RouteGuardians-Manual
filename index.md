@@ -1,3 +1,8 @@
+---
+title: RouteGuardians Manual
+description: TransitOps Judge Walkthrough
+---
+
 # TransitOps Judge Walkthrough
 
 Use this guide when testing the prototype. It is written as a click-by-click
@@ -52,14 +57,13 @@ password: 12345678
 
 ### 4. Review Incident
 
-Go to `Review`. 
+Go to `Review`.
 
 More details will be shown. If incident report was written in other languages, you can translate it into English.
 
 ### 5. Decision Settings
 
 Go to `Decision Settings`.
-
 
 ### 6. Compare routes
 
