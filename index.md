@@ -9,12 +9,6 @@ layout: default
   Use the tabs below to switch between the Operations Officer manual and the Bus Driver manual.
 </p>
 
-<div class="manual-meta">
-  <span class="meta">Version: Judge walkthrough</span>
-  <span class="meta">Format: Two tab manual</span>
-  <span class="meta">Default tab: Operations Officer</span>
-</div>
-
 <div class="tabs" role="tablist" aria-label="Manual sections">
   <button
     class="tab-button"
