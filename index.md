@@ -36,16 +36,10 @@ layout: default
 
 <section class="tab-panel is-active" id="panel-officer" role="tabpanel" aria-labelledby="tab-officer">
   <section class="section">
-    <h2>Before You Start</h2>
-    <ul>
-      <li>Open the app and sign in as the operations officer.</li>
-      <li>Use the sample incident already included in the prototype.</li>
-      <li>Follow the steps below in order.</li>
-    </ul>
     <div class="note">
       <strong>Accounts</strong><br />
-      Admin: <code>admin@officer.com</code> / <code>12345678</code><br />
-      Officer: <code>officer@officer.com</code> / <code>12345678</code>
+      Admin: <code>email: admin@officer.com</code> / <code>password: 12345678</code><br />
+      Officer: <code>email: officer@officer.com</code> / <code>password: 12345678</code>
     </div>
   </section>
 
