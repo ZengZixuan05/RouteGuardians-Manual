@@ -53,15 +53,8 @@ layout: default
         <figure class="screenshot">
           <img src="assets/ss1.png" alt="Sample incident screenshot for SVC 93 accident" />
           <figcaption>Sample incident used in the walkthrough.</figcaption>
+          Go to <code>Review</code>. If the incident report is in another language, translate it into English.
         </figure>
-      </li>
-      <li>
-        <span class="step-title">Select the incident</span>
-        Open the incident summary and review location, service, severity, and map context.
-      </li>
-      <li>
-        <span class="step-title">Review the incident</span>
-        Go to <code>Review</code>. If the incident report is in another language, translate it into English.
       </li>
       <li>
         <span class="step-title">Open decision settings</span>
