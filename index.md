@@ -40,23 +40,20 @@ layout: default
     <ol class="procedure">
       <li>
         <span class="step-title">Open the app</span>
-        You should see a sign-in page for Operations Officer. Below are the demo account details: <br />
-          <strong>Accounts</strong><br />
-            Admin: <code>email: admin@officer.com</code> / <code>password: 12345678</code><br>
-            Officer: <code>email: officer@officer.com</code> / <code>password: 12345678</code>
+        You should see the Operations Officer sign-in page. Use one of the demo accounts below to sign in: <br />
+          <div class="note">
+            <strong>Accounts</strong><br />
+              Admin: <code>email: admin@officer.com</code> / <code>password: 12345678</code><br>
+              Officer: <code>email: officer@officer.com</code> / <code>password: 12345678</code>
+          </div>
       </li>
       <li>
         <span class="step-title">Review the incident feed</span>
-        Check the SVC 93 accident card and confirm the live context shown on screen.
-        <div class="note">
-          <strong>Sample incident</strong><br />
-          SVC 93 accident<br />
-          Lor Ah Soo (Upp Paya Lebar Rd)<br />
-          Medium severity<br />
-          41 passengers onboard<br />
-          Awaiting assessment<br />
-          Pending status
-        </div>
+        We will use the SVC 93 accident for the demo. The live context is shown on screen.
+        <figure class="screenshot">
+          <img src="assets/ss1.png" alt="Sample incident screenshot for SVC 93 accident" />
+          <figcaption>Sample incident used in the walkthrough.</figcaption>
+        </figure>
       </li>
       <li>
         <span class="step-title">Select the incident</span>
