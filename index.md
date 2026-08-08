@@ -34,7 +34,7 @@ layout: default
   <h2>Sample Incident</h2>
   <ul>
     <li>Road blockage on Bras Basah Road near the National Museum of Singapore</li>
-    <li>Bus service 14</li>
+    <li>Bus service 93</li>
     <li>High severity</li>
     <li>41 passengers onboard</li>
   </ul>
@@ -84,16 +84,4 @@ layout: default
       The bus captain is notified about the reroute, passengers are notified, and the incident is marked as dispatched.
     </li>
   </ol>
-</section>
-
-<section class="section">
-  <h2>Optional Screens</h2>
-  <ul>
-    <li><code>Historical Reports</code></li>
-    <li><code>User Management</code> if the officer is an admin</li>
-  </ul>
-  <div class="warning">
-    <strong>Note</strong><br />
-    Passenger notifications are shown in the prototype as a Telegram flow.
-  </div>
 </section>
