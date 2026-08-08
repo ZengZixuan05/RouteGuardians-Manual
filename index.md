@@ -4,132 +4,96 @@ description: TransitOps Judge Walkthrough
 layout: default
 ---
 
-<section class="hero">
-  <div class="hero-grid">
-    <div>
-      <div class="eyebrow">Operations manual</div>
-      <h1>TransitOps Judge Walkthrough</h1>
-      <p class="lead">
-        Use this guide when testing the prototype. It is written as a click-by-click
-        walkthrough for the operations officer flow only.
-      </p>
-      <div class="tag-row" style="margin-top: 22px;">
-        <span class="tag">Incident review</span>
-        <span class="tag">Route comparison</span>
-        <span class="tag">Dispatch approval</span>
-      </div>
-    </div>
+<h1>TransitOps Judge Walkthrough</h1>
+<p class="subtitle">
+  Use this guide when testing the prototype. It is written as a simple step-by-step
+  instruction manual for the operations officer flow only.
+</p>
 
-    <aside class="card quickfacts">
-      <div class="quickfact">
-        <small>Test account</small>
-        <strong>officer@officer.com<br />password: 12345678</strong>
-      </div>
-      <div class="quickfact">
-        <small>Admin account</small>
-        <strong>admin@officer.com<br />password: 12345678</strong>
-      </div>
-      <div class="quickfact">
-        <small>Sample incident</small>
-        <strong>Bras Basah Road blockage near the National Museum of Singapore</strong>
-      </div>
-    </aside>
+<div class="manual-meta">
+  <span class="meta">Version: Judge walkthrough</span>
+  <span class="meta">Audience: Operations officer</span>
+  <span class="meta">Format: Step by step</span>
+</div>
+
+<section class="section">
+  <h2>Before You Start</h2>
+  <ul>
+    <li>Open the app and sign in as the operations officer.</li>
+    <li>Use the sample incident already included in the prototype.</li>
+    <li>Follow the steps below in order.</li>
+  </ul>
+  <div class="note">
+    <strong>Accounts</strong><br />
+    Admin: <code>admin@officer.com</code> / <code>12345678</code><br />
+    Officer: <code>officer@officer.com</code> / <code>12345678</code>
   </div>
 </section>
 
 <section class="section">
-  <h2>What The Prototype Shows</h2>
-  <p>TransitOps simulates an operations response workflow.</p>
-  <ol class="timeline">
-    <li class="step">
-      <strong>Review the incident</strong>
-      <p>The officer opens the active incident and checks the live context.</p>
+  <h2>Sample Incident</h2>
+  <ul>
+    <li>Road blockage on Bras Basah Road near the National Museum of Singapore</li>
+    <li>Bus service 14</li>
+    <li>High severity</li>
+    <li>41 passengers onboard</li>
+  </ul>
+</section>
+
+<section class="section">
+  <h2>Procedure</h2>
+  <ol class="procedure">
+    <li>
+      <span class="step-title">Open the app</span>
+      You should see a sign-in page for Operations Officer.
     </li>
-    <li class="step">
-      <strong>Compare diversion options</strong>
-      <p>The officer looks at route choices and checks delay, feasibility, and impact.</p>
+    <li>
+      <span class="step-title">Review the incident feed</span>
+      Check the active incident and confirm the live context shown on screen.
     </li>
-    <li class="step">
-      <strong>Approve and dispatch</strong>
-      <p>The officer confirms the route and sends notifications to the relevant teams.</p>
+    <li>
+      <span class="step-title">Select the incident</span>
+      Open the incident summary and review location, service, severity, and map context.
+    </li>
+    <li>
+      <span class="step-title">Review the incident</span>
+      Go to <code>Review</code>. If the incident report is in another language, translate it into English.
+    </li>
+    <li>
+      <span class="step-title">Open decision settings</span>
+      Go to <code>Decision Settings</code>.
+    </li>
+    <li>
+      <span class="step-title">Compare routes</span>
+      Go to <code>AI Route Comparison</code> and compare the route options shown.
+    </li>
+    <li>
+      <span class="step-title">Review directions</span>
+      Check the final overview of the confirmed route.
+    </li>
+    <li>
+      <span class="step-title">Check affected buses</span>
+      Go to <code>Check Affected Buses</code> and review the services flagged by the system.
+    </li>
+    <li>
+      <span class="step-title">Approve the diversion</span>
+      Go to <code>Proceed to Approval</code> and approve or reject the route.
+    </li>
+    <li>
+      <span class="step-title">Dispatch notifications</span>
+      The bus captain is notified about the reroute, passengers are notified, and the incident is marked as dispatched.
     </li>
   </ol>
-</section>
-
-<section class="section grid-2">
-  <div>
-    <h2>Recommended Test Path</h2>
-    <p>
-      This manual covers only the officer workflow. The sample incident is already
-      available in the prototype, so you can start from the officer dashboard.
-    </p>
-    <div class="callout">
-      <strong>Good to know</strong>
-      <span class="muted">The default scenario is designed to be simple to reproduce during judging or demos.</span>
-    </div>
-  </div>
-
-  <div>
-    <h2>Test Scenario</h2>
-    <ul>
-      <li>Road blockage on Bras Basah Road near the National Museum of Singapore</li>
-      <li>Bus service 14</li>
-      <li>High severity</li>
-      <li>41 passengers onboard</li>
-    </ul>
-  </div>
-</section>
-
-<section class="section">
-  <h2>Walkthrough</h2>
-  <div class="timeline">
-    <div class="step">
-      <strong>1. Open the app</strong>
-      <p>You should see a sign in page for Operations Officer. Sign in with either of these accounts below.</p>
-    </div>
-    <div class="step">
-      <strong>2. Overview of Incident Feed</strong>
-      <p>The command centre is showing live incident context. You can switch between active and historical incidents if available.</p>
-    </div>
-    <div class="step">
-      <strong>3. Select Incident</strong>
-      <p>You see the incident summary, plus location, service, severity, and live map context.</p>
-    </div>
-    <div class="step">
-      <strong>4. Review Incident</strong>
-      <p>Go to <code>Review</code>. More details will be shown. If the incident report was written in another language, translate it into English.</p>
-    </div>
-    <div class="step">
-      <strong>5. Decision Settings</strong>
-      <p>Go to <code>Decision Settings</code>.</p>
-    </div>
-    <div class="step">
-      <strong>6. Compare routes</strong>
-      <p>Go to <code>AI Route Comparison</code>. One or more route options should appear, and you can compare delay and feasibility. You can also create a custom route or edit the AI-generated route.</p>
-    </div>
-    <div class="step">
-      <strong>7. Review Directions</strong>
-      <p>This gives a final overview of the confirmed route.</p>
-    </div>
-    <div class="step">
-      <strong>8. Check affected buses</strong>
-      <p>Go to <code>Check Affected Buses</code>. The system scans for services near the incident and shows affected buses that can be notified.</p>
-    </div>
-    <div class="step">
-      <strong>9. Approve the diversion</strong>
-      <p>Go to <code>Proceed to Approval</code>. The incident summary and selected diversion are shown. You can approve or reject the route.</p>
-    </div>
-    <div class="step">
-      <strong>10. Dispatch notifications</strong>
-      <p>The bus captain will be notified about the reroute. Passengers will be notified via Telegram, and the incident is marked as dispatched.</p>
-    </div>
-  </div>
 </section>
 
 <section class="section">
   <h2>Optional Screens</h2>
   <ul>
     <li><code>Historical Reports</code></li>
-    <li><code>User Management</code> if the officer is an admin. Admin can add users.</li>
+    <li><code>User Management</code> if the officer is an admin</li>
   </ul>
+  <div class="warning">
+    <strong>Note</strong><br />
+    Passenger notifications are shown in the prototype as a Telegram flow.
+  </div>
 </section>
