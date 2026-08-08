@@ -36,19 +36,14 @@ layout: default
 
 <section class="tab-panel is-active" id="panel-officer" role="tabpanel" aria-labelledby="tab-officer">
   <section class="section">
-    <div class="note">
-      <strong>Accounts</strong><br />
-      Admin: <code>email: admin@officer.com</code> / <code>password: 12345678</code><br />
-      Officer: <code>email: officer@officer.com</code> / <code>password: 12345678</code>
-    </div>
-  </section>
-
-  <section class="section">
     <h2>Procedure</h2>
     <ol class="procedure">
       <li>
         <span class="step-title">Open the app</span>
-        You should see a sign-in page for Operations Officer.
+        You should see a sign-in page for Operations Officer. Below are the demo account details:
+          <strong>Accounts</strong><br />
+            Admin: <code>email: admin@officer.com</code> / <code>password: 12345678</code><br>
+            Officer: <code>email: officer@officer.com</code> / <code>password: 12345678</code>
       </li>
       <li>
         <span class="step-title">Review the incident feed</span>
