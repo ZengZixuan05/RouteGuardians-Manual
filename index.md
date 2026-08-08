@@ -33,10 +33,12 @@ layout: default
 <section class="section">
   <h2>Sample Incident</h2>
   <ul>
-    <li>Road blockage on Bras Basah Road near the National Museum of Singapore</li>
-    <li>Bus service 93</li>
-    <li>High severity</li>
+    <li>SVC 93 accident</li>
+    <li>Lor Ah Soo (Upp Paya Lebar Rd)</li>
+    <li>Medium severity</li>
     <li>41 passengers onboard</li>
+    <li>Awaiting assessment</li>
+    <li>Pending status</li>
   </ul>
 </section>
 
@@ -49,7 +51,7 @@ layout: default
     </li>
     <li>
       <span class="step-title">Review the incident feed</span>
-      Check the active incident and confirm the live context shown on screen.
+      Check the SVC 93 accident card and confirm the live context shown on screen.
     </li>
     <li>
       <span class="step-title">Select the incident</span>
