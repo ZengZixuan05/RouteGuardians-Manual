@@ -52,13 +52,18 @@ layout: default
         We will use the SVC 93 accident for the demo. The live context is shown on screen.
         <figure class="screenshot">
           <img src="assets/ss1.png" alt="Sample incident screenshot for SVC 93 accident" />
-          <figcaption>Sample incident used in the walkthrough.</figcaption>
-          Go to <code>Review</code>. If the incident report is in another language, translate it into English.
+          <figcaption>Sample incident used in the walkthrough. If the incident report is in another language, translate it into English.</figcaption>
         </figure>
       </li>
       <li>
-        <span class="step-title">Open decision settings</span>
-        Go to <code>Decision Settings</code>.
+        <span class="step-title">Go to Review</span>
+        <figure class="screenshot">
+          <img src="assets/ss2.png"/>
+          <figcaption>More details on the incident.</figcaption>
+        </figure>
+      </li>
+      <li>
+        <span class="step-title">Go to decision settings</span>
       </li>
       <li>
         <span class="step-title">Compare routes</span>
