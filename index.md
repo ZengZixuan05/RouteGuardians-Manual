@@ -40,7 +40,7 @@ layout: default
     <ol class="procedure">
       <li>
         <span class="step-title">Open the app</span>
-        You should see a sign-in page for Operations Officer. Below are the demo account details:
+        You should see a sign-in page for Operations Officer. Below are the demo account details: <br />
           <strong>Accounts</strong><br />
             Admin: <code>email: admin@officer.com</code> / <code>password: 12345678</code><br>
             Officer: <code>email: officer@officer.com</code> / <code>password: 12345678</code>
