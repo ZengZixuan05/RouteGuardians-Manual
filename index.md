@@ -44,18 +44,6 @@ layout: default
   </section>
 
   <section class="section">
-    <h2>Sample Incident</h2>
-    <ul>
-      <li>SVC 93 accident</li>
-      <li>Lor Ah Soo (Upp Paya Lebar Rd)</li>
-      <li>Medium severity</li>
-      <li>41 passengers onboard</li>
-      <li>Awaiting assessment</li>
-      <li>Pending status</li>
-    </ul>
-  </section>
-
-  <section class="section">
     <h2>Procedure</h2>
     <ol class="procedure">
       <li>
@@ -65,6 +53,15 @@ layout: default
       <li>
         <span class="step-title">Review the incident feed</span>
         Check the SVC 93 accident card and confirm the live context shown on screen.
+        <div class="note">
+          <strong>Sample incident</strong><br />
+          SVC 93 accident<br />
+          Lor Ah Soo (Upp Paya Lebar Rd)<br />
+          Medium severity<br />
+          41 passengers onboard<br />
+          Awaiting assessment<br />
+          Pending status
+        </div>
       </li>
       <li>
         <span class="step-title">Select the incident</span>
