@@ -2,6 +2,8 @@
 title: RouteGuardians Manual
 description: TransitOps Judge Walkthrough
 layout: default
+header_subtitle: TransitOps Operations Officer Walkthrough
+guide_label: Operations workflow
 ---
 
 <section class="hero">
@@ -10,8 +12,9 @@ layout: default
       <div class="eyebrow">Operations manual</div>
       <h1>TransitOps Judge Walkthrough</h1>
       <p class="lead">
-        Use this guide when testing the prototype. It is written as a click-by-click
-        walkthrough for the operations officer flow only.
+        Follow the Operations Officer workflow to review an incident, compare diversion
+        options, approve the route, and dispatch notifications. The Bus Driver guide is
+        included below as a placeholder for now.
       </p>
       <div class="tag-row" style="margin-top: 22px;">
         <span class="tag">Incident review</span>
@@ -19,121 +22,287 @@ layout: default
         <span class="tag">Dispatch approval</span>
       </div>
       <div class="hero-actions">
-        <a class="button" href="{{ '/android-app/' | relative_url }}">Open Android app guide <span aria-hidden="true">→</span></a>
-        <span class="action-note">Guest and administrator credentials included</span>
+        <a class="button" href="#officer-workflow">Start officer workflow <span aria-hidden="true">↓</span></a>
+        <a class="button button-secondary" href="#driver-workflow">Jump to driver placeholder</a>
       </div>
     </div>
 
-    <aside class="card quickfacts">
+    <aside class="card quickfacts" aria-label="Operations demo credentials">
       <div class="quickfact">
         <small>Test account</small>
-        <strong>officer@officer.com<br />password: 12345678</strong>
+        <div class="credential-lines">
+          <div class="credential-line">
+            <span>Email</span>
+            <code>officer@officer.com</code>
+          </div>
+          <div class="credential-line">
+            <span>Password</span>
+            <code>12345678</code>
+          </div>
+        </div>
       </div>
       <div class="quickfact">
         <small>Admin account</small>
-        <strong>admin@officer.com<br />password: 12345678</strong>
+        <div class="credential-lines">
+          <div class="credential-line">
+            <span>Email</span>
+            <code>admin@officer.com</code>
+          </div>
+          <div class="credential-line">
+            <span>Password</span>
+            <code>12345678</code>
+          </div>
+        </div>
       </div>
       <div class="quickfact">
         <small>Sample incident</small>
-        <strong>Bras Basah Road blockage near the National Museum of Singapore</strong>
+        <strong>SVC 93 accident at Lor Ah Soo (Upp Paya Lebar Rd)</strong>
       </div>
     </aside>
   </div>
 </section>
 
-<section class="section">
-  <h2>What The Prototype Shows</h2>
-  <p>TransitOps simulates an operations response workflow.</p>
-  <ol class="timeline">
-    <li class="step">
-      <strong>Review the incident</strong>
-      <p>The officer opens the active incident and checks the live context.</p>
-    </li>
-    <li class="step">
-      <strong>Compare diversion options</strong>
-      <p>The officer looks at route choices and checks delay, feasibility, and impact.</p>
-    </li>
-    <li class="step">
-      <strong>Approve and dispatch</strong>
-      <p>The officer confirms the route and sends notifications to the relevant teams.</p>
-    </li>
-  </ol>
-</section>
-
-<section class="section grid-2">
-  <div>
-    <h2>Recommended Test Path</h2>
-    <p>
-      This manual covers only the officer workflow. The sample incident is already
-      available in the prototype, so you can start from the officer dashboard.
-    </p>
-    <div class="callout">
-      <strong>Good to know</strong>
-      <span class="muted">The default scenario is designed to be simple to reproduce during judging or demos.</span>
-    </div>
+<section class="section" aria-labelledby="choose-workflow">
+  <h2 id="choose-workflow">Choose a workflow</h2>
+  <p>Open the TransitOps web guide, then choose the section you want to follow.</p>
+  <div class="role-links">
+    <a class="role-link" href="#officer-workflow">
+      <span class="role-link-copy">
+        <strong>Operations Officer</strong>
+        <span>Review incidents, compare routes, and approve a diversion.</span>
+      </span>
+      <b aria-hidden="true">→</b>
+    </a>
+    <a class="role-link" href="#driver-workflow">
+      <span class="role-link-copy">
+        <strong>Bus Driver</strong>
+        <span>Placeholder content for the driver manual.</span>
+      </span>
+      <b aria-hidden="true">→</b>
+    </a>
   </div>
-
-  <div>
-    <h2>Test Scenario</h2>
-    <ul>
-      <li>Road blockage on Bras Basah Road near the National Museum of Singapore</li>
-      <li>Bus service 14</li>
-      <li>High severity</li>
-      <li>41 passengers onboard</li>
-    </ul>
+  <div class="callout">
+    <strong>Demo note</strong>
+    <span class="muted">The officer workflow uses the SVC 93 accident as the sample incident. The driver section is a draft for now.</span>
   </div>
 </section>
 
-<section class="section">
-  <h2>Walkthrough</h2>
-  <div class="timeline">
-    <div class="step">
-      <strong>1. Open the app</strong>
-      <p>You should see a sign in page for Operations Officer. Sign in with either of these accounts below.</p>
+<section class="section" id="officer-workflow" aria-labelledby="officer-title">
+  <div class="section-heading">
+    <div>
+      <span class="workflow-kicker">Operations officer</span>
+      <h2 id="officer-title">Officer workflow</h2>
+      <p>Use the operations officer account to review the incident feed, examine the SVC 93 accident, and complete the diversion approval flow.</p>
     </div>
-    <div class="step">
-      <strong>2. Overview of Incident Feed</strong>
-      <p>The command centre is showing live incident context. You can switch between active and historical incidents if available.</p>
-    </div>
-    <div class="step">
-      <strong>3. Select Incident</strong>
-      <p>You see the incident summary, plus location, service, severity, and live map context.</p>
-    </div>
-    <div class="step">
-      <strong>4. Review Incident</strong>
-      <p>Go to <code>Review</code>. More details will be shown. If the incident report was written in another language, translate it into English.</p>
-    </div>
-    <div class="step">
-      <strong>5. Decision Settings</strong>
-      <p>Go to <code>Decision Settings</code>.</p>
-    </div>
-    <div class="step">
-      <strong>6. Compare routes</strong>
-      <p>Go to <code>AI Route Comparison</code>. One or more route options should appear, and you can compare delay and feasibility. You can also create a custom route or edit the AI-generated route.</p>
-    </div>
-    <div class="step">
-      <strong>7. Review Directions</strong>
-      <p>This gives a final overview of the confirmed route.</p>
-    </div>
-    <div class="step">
-      <strong>8. Check affected buses</strong>
-      <p>Go to <code>Check Affected Buses</code>. The system scans for services near the incident and shows affected buses that can be notified.</p>
-    </div>
-    <div class="step">
-      <strong>9. Approve the diversion</strong>
-      <p>Go to <code>Proceed to Approval</code>. The incident summary and selected diversion are shown. You can approve or reject the route.</p>
-    </div>
-    <div class="step">
-      <strong>10. Dispatch notifications</strong>
-      <p>The bus captain will be notified about the reroute. Passengers will be notified via Telegram, and the incident is marked as dispatched.</p>
-    </div>
+    <a class="button button-secondary" href="#driver-workflow">Driver placeholder ↓</a>
+  </div>
+
+  <div class="workflow-list">
+    <article class="workflow-step">
+      <div class="workflow-copy">
+        <span class="step-label">Step 1</span>
+        <h3>Open the app and sign in</h3>
+        <p>Launch TransitOps and sign in with <code>officer@officer.com</code> and password <code>12345678</code>. The app opens to the incident feed.</p>
+      </div>
+      <figure class="screenshot-slot">
+        <figcaption>
+          <span class="phone-mark" aria-hidden="true"></span>
+          <strong>Screenshot: Officer sign in</strong>
+          <span>Show the Operations Officer login screen with the credentials entered.</span>
+        </figcaption>
+      </figure>
+    </article>
+
+    <article class="workflow-step">
+      <div class="workflow-copy">
+        <span class="step-label">Step 2</span>
+        <h3>Review the incident feed</h3>
+        <p>Check the live incident card for the demo case. The sample incident is the SVC 93 accident at Lor Ah Soo (Upp Paya Lebar Rd), marked as medium severity and awaiting assessment.</p>
+        <p>Confirm the passenger count and status before moving on to the detailed review.</p>
+      </div>
+      <figure class="screenshot-slot">
+        <img src="{{ '/assets/ss1.png' | relative_url }}" alt="Sample incident screenshot showing the SVC 93 accident at Lor Ah Soo" />
+      </figure>
+    </article>
+
+    <article class="workflow-step">
+      <div class="workflow-copy">
+        <span class="step-label">Step 3</span>
+        <h3>Select the incident</h3>
+        <p>Open the incident summary to review the location, service, severity, map context, and the current report status.</p>
+      </div>
+      <figure class="screenshot-slot">
+        <figcaption>
+          <span class="phone-mark" aria-hidden="true"></span>
+          <strong>Screenshot: Incident summary</strong>
+          <span>Show the incident summary after tapping the live card.</span>
+        </figcaption>
+      </figure>
+    </article>
+
+    <article class="workflow-step">
+      <div class="workflow-copy">
+        <span class="step-label">Step 4</span>
+        <h3>Review the incident details</h3>
+        <p>Go to <code>Review</code>. Check the report text and translate it into English if the incident was entered in another language.</p>
+      </div>
+      <figure class="screenshot-slot">
+        <figcaption>
+          <span class="phone-mark" aria-hidden="true"></span>
+          <strong>Screenshot: Review screen</strong>
+          <span>Show the review screen before route decisions are made.</span>
+        </figcaption>
+      </figure>
+    </article>
+
+    <article class="workflow-step">
+      <div class="workflow-copy">
+        <span class="step-label">Step 5</span>
+        <h3>Open decision settings</h3>
+        <p>Tap <code>Decision Settings</code> to prepare the route decision flow.</p>
+      </div>
+      <figure class="screenshot-slot">
+        <figcaption>
+          <span class="phone-mark" aria-hidden="true"></span>
+          <strong>Screenshot: Decision settings</strong>
+          <span>Show the control page used before comparing routes.</span>
+        </figcaption>
+      </figure>
+    </article>
+
+    <article class="workflow-step">
+      <div class="workflow-copy">
+        <span class="step-label">Step 6</span>
+        <h3>Compare route options</h3>
+        <p>Open <code>AI Route Comparison</code> and review the suggested routes. Compare delay, feasibility, and the impact of each diversion.</p>
+        <p>You can create a custom route or edit an AI-generated route if needed.</p>
+      </div>
+      <figure class="screenshot-slot">
+        <figcaption>
+          <span class="phone-mark" aria-hidden="true"></span>
+          <strong>Screenshot: Route comparison</strong>
+          <span>Show the route options and any AI-generated route cards.</span>
+        </figcaption>
+      </figure>
+    </article>
+
+    <article class="workflow-step">
+      <div class="workflow-copy">
+        <span class="step-label">Step 7</span>
+        <h3>Review the final directions</h3>
+        <p>Check the confirmed route and make sure the directions match the approved diversion plan.</p>
+      </div>
+      <figure class="screenshot-slot">
+        <figcaption>
+          <span class="phone-mark" aria-hidden="true"></span>
+          <strong>Screenshot: Final directions</strong>
+          <span>Show the confirmed route before checking bus impact.</span>
+        </figcaption>
+      </figure>
+    </article>
+
+    <article class="workflow-step">
+      <div class="workflow-copy">
+        <span class="step-label">Step 8</span>
+        <h3>Check affected buses</h3>
+        <p>Use <code>Check Affected Buses</code> to review the services flagged by the system and see which drivers should be notified.</p>
+      </div>
+      <figure class="screenshot-slot">
+        <figcaption>
+          <span class="phone-mark" aria-hidden="true"></span>
+          <strong>Screenshot: Affected buses</strong>
+          <span>Show the affected-service list before approval.</span>
+        </figcaption>
+      </figure>
+    </article>
+
+    <article class="workflow-step">
+      <div class="workflow-copy">
+        <span class="step-label">Step 9</span>
+        <h3>Approve the diversion</h3>
+        <p>Go to <code>Proceed to Approval</code>. Review the incident summary and selected diversion, then approve or reject the route.</p>
+      </div>
+      <figure class="screenshot-slot">
+        <figcaption>
+          <span class="phone-mark" aria-hidden="true"></span>
+          <strong>Screenshot: Approval screen</strong>
+          <span>Show the final approval page before dispatch.</span>
+        </figcaption>
+      </figure>
+    </article>
+
+    <article class="workflow-step">
+      <div class="workflow-copy">
+        <span class="step-label">Step 10</span>
+        <h3>Dispatch notifications</h3>
+        <p>Once approved, the bus captain is notified about the reroute, passengers are notified, and the incident is marked as dispatched.</p>
+      </div>
+      <figure class="screenshot-slot">
+        <figcaption>
+          <span class="phone-mark" aria-hidden="true"></span>
+          <strong>Screenshot: Dispatched status</strong>
+          <span>Show the incident after dispatch notifications are sent.</span>
+        </figcaption>
+      </figure>
+    </article>
   </div>
 </section>
 
-<section class="section">
-  <h2>Optional Screens</h2>
-  <ul>
-    <li><code>Historical Reports</code></li>
-    <li><code>User Management</code> if the officer is an admin. Admin can add users.</li>
-  </ul>
+<section class="section" id="driver-workflow" aria-labelledby="driver-title">
+  <div class="section-heading">
+    <div>
+      <span class="workflow-kicker">Bus driver</span>
+      <h2 id="driver-title">Driver workflow placeholder</h2>
+      <p>This section is a placeholder for now. We can replace it with the real Bus Driver manual later.</p>
+    </div>
+    <a class="button button-secondary" href="#officer-workflow">Back to officer workflow ↑</a>
+  </div>
+
+  <div class="workflow-list">
+    <article class="workflow-step">
+      <div class="workflow-copy">
+        <span class="step-label">Step 1</span>
+        <h3>Open the driver view</h3>
+        <p>Placeholder content for the Bus Driver manual.</p>
+      </div>
+      <figure class="screenshot-slot">
+        <figcaption>
+          <span class="phone-mark" aria-hidden="true"></span>
+          <strong>Screenshot placeholder</strong>
+          <span>Replace this with the driver sign-in or home screen later.</span>
+        </figcaption>
+      </figure>
+    </article>
+
+    <article class="workflow-step">
+      <div class="workflow-copy">
+        <span class="step-label">Step 2</span>
+        <h3>Receive the diversion notice</h3>
+        <p>Placeholder content for the Bus Driver manual.</p>
+      </div>
+      <figure class="screenshot-slot">
+        <figcaption>
+          <span class="phone-mark" aria-hidden="true"></span>
+          <strong>Screenshot placeholder</strong>
+          <span>Replace this with the route alert or notification view later.</span>
+        </figcaption>
+      </figure>
+    </article>
+
+    <article class="workflow-step">
+      <div class="workflow-copy">
+        <span class="step-label">Step 3</span>
+        <h3>Confirm the updated route</h3>
+        <p>Placeholder content for the Bus Driver manual.</p>
+      </div>
+      <figure class="screenshot-slot">
+        <figcaption>
+          <span class="phone-mark" aria-hidden="true"></span>
+          <strong>Screenshot placeholder</strong>
+          <span>Replace this with the confirmed route screen later.</span>
+        </figcaption>
+      </figure>
+    </article>
+  </div>
 </section>
+
