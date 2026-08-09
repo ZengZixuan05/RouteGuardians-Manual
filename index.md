@@ -111,132 +111,57 @@ guide_label: Operations workflow
     <article class="workflow-step">
       <div class="workflow-copy">
         <span class="step-label">Step 2</span>
-        <h3>Review the incident feed</h3>
+        <h3>Select Incident</h3>
         <p>Select an incident from the list displayed at the bottom-left of the dashboard. For this demonstration, we will use the SVC 93 incident at Lor Ah Soo.</p>
       </div>
-      <figure class="screenshot-slot">
-        <img src="{{ '/assets/ss1.png' | relative_url }}" alt="Sample incident screenshot showing the SVC 93 accident at Lor Ah Soo" />
-      </figure>
     </article>
 
     <article class="workflow-step">
       <div class="workflow-copy">
         <span class="step-label">Step 3</span>
-        <h3>Select the incident</h3>
+        <h3>Review Incident</h3>
         <p>Click “Review” to examine the incident details. Photos submitted by bus captains may also be available, providing operators with a clearer understanding of the situation.</p>
       </div>
-      <figure class="screenshot-slot">
-        <figcaption>
-          <span class="phone-mark" aria-hidden="true"></span>
-          <strong>Screenshot: Incident summary</strong>
-          <span>Show the incident summary after tapping the live card.</span>
-        </figcaption>
-      </figure>
     </article>
 
     <article class="workflow-step">
       <div class="workflow-copy">
         <span class="step-label">Step 4</span>
-        <h3>Review the incident details</h3>
+        <h3>Decision Settings</h3>
         <p>Configure the notification settings to alert affected passengers and the next bus captain approaching the incident area.</p>
       </div>
-      <figure class="screenshot-slot">
-        <figcaption>
-          <span class="phone-mark" aria-hidden="true"></span>
-          <strong>Screenshot: Review screen</strong>
-          <span>Show the review screen before route decisions are made.</span>
-        </figcaption>
-      </figure>
     </article>
 
     <article class="workflow-step">
       <div class="workflow-copy">
         <span class="step-label">Step 5</span>
-        <h3>Open decision settings</h3>
+        <h3>AI route comparison</h3>
         <p>Review the AI-generated diversion route and make adjustments where necessary. Operators can modify the proposed route or add custom waypoints to better suit operational requirements.</p>
       </div>
-      <figure class="screenshot-slot">
-        <figcaption>
-          <span class="phone-mark" aria-hidden="true"></span>
-          <strong>Screenshot: Decision settings</strong>
-          <span>Show the control page used before comparing routes.</span>
-        </figcaption>
-      </figure>
     </article>
 
     <article class="workflow-step">
       <div class="workflow-copy">
         <span class="step-label">Step 6</span>
-        <h3>Compare route options</h3>
+        <h3>Review Directions</h3>
         <p>Review the proposed directions and confirm that the diversion route is suitable before proceeding.</p>
       </div>
-      <figure class="screenshot-slot">
-        <figcaption>
-          <span class="phone-mark" aria-hidden="true"></span>
-          <strong>Screenshot: Route comparison</strong>
-          <span>Show the route options and any AI-generated route cards.</span>
-        </figcaption>
-      </figure>
     </article>
 
     <article class="workflow-step">
       <div class="workflow-copy">
         <span class="step-label">Step 7</span>
-        <h3>Review the final directions</h3>
+        <h3>Check Affected Bus</h3>
         <p>Review the bus services affected by the disruption and notify the relevant bus captains of the approved diversion.</p>
       </div>
-      <figure class="screenshot-slot">
-        <figcaption>
-          <span class="phone-mark" aria-hidden="true"></span>
-          <strong>Screenshot: Final directions</strong>
-          <span>Show the confirmed route before checking bus impact.</span>
-        </figcaption>
-      </figure>
     </article>
 
     <article class="workflow-step">
       <div class="workflow-copy">
         <span class="step-label">Step 8</span>
-        <h3>Check affected buses</h3>
+        <h3>Approval</h3>
         <p>Review the diversion summary and approve the confirmed route. Once approved, the system will automatically send the relevant notifications through the designated Telegram channel: <code>https://t.me/busreroute_huawei_hackathon</code>.</p>
       </div>
-      <figure class="screenshot-slot">
-        <figcaption>
-          <span class="phone-mark" aria-hidden="true"></span>
-          <strong>Screenshot: Affected buses</strong>
-          <span>Show the affected-service list before approval.</span>
-        </figcaption>
-      </figure>
-    </article>
-
-    <article class="workflow-step">
-      <div class="workflow-copy">
-        <span class="step-label">Step 9</span>
-        <h3>Approve the diversion</h3>
-        <p>Review the diversion summary and approve the confirmed route.</p>
-      </div>
-      <figure class="screenshot-slot">
-        <figcaption>
-          <span class="phone-mark" aria-hidden="true"></span>
-          <strong>Screenshot: Approval screen</strong>
-          <span>Show the final approval page before dispatch.</span>
-        </figcaption>
-      </figure>
-    </article>
-
-    <article class="workflow-step">
-      <div class="workflow-copy">
-        <span class="step-label">Step 10</span>
-        <h3>Dispatch notifications</h3>
-        <p>Once approved, the system will automatically send the relevant notifications through the designated Telegram channel.</p>
-      </div>
-      <figure class="screenshot-slot">
-        <figcaption>
-          <span class="phone-mark" aria-hidden="true"></span>
-          <strong>Screenshot: Dispatched status</strong>
-          <span>Show the incident after dispatch notifications are sent.</span>
-        </figcaption>
-      </figure>
     </article>
   </div>
 </section>
