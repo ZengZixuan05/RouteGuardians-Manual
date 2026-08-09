@@ -22,7 +22,7 @@ guide_label: Operations workflow
       </div>
       <div class="hero-actions">
         <a class="button" href="#officer-workflow">Start officer workflow <span aria-hidden="true">↓</span></a>
-        <a class="button button-secondary" href="#driver-workflow">Jump to driver placeholder</a>
+        <a class="button button-secondary" href="#admin-workflow">Jump to admin workflow</a>
       </div>
     </div>
 
@@ -72,10 +72,10 @@ guide_label: Operations workflow
       </span>
       <b aria-hidden="true">→</b>
     </a>
-    <a class="role-link" href="#driver-workflow">
+    <a class="role-link" href="#admin-workflow">
       <span class="role-link-copy">
-        <strong>Officer Admin</strong>
-        <span>Add and remove Officer and Admin</span>
+        <strong>Admin</strong>
+        <span>Add or remove officers and admins</span>
       </span>
       <b aria-hidden="true">→</b>
     </a>
@@ -93,7 +93,7 @@ guide_label: Operations workflow
       <h2 id="officer-title">Officer workflow</h2>
       <p>Use the operations officer account to review the incident feed, examine the SVC 93 accident, and complete the diversion approval flow.</p>
     </div>
-    <a class="button button-secondary" href="#driver-workflow">Driver placeholder ↓</a>
+    <a class="button button-secondary" href="#admin-workflow">Admin workflow ↓</a>
   </div>
 
   <div class="workflow-list">
@@ -166,12 +166,12 @@ guide_label: Operations workflow
   </div>
 </section>
 
-<section class="section" id="driver-workflow" aria-labelledby="driver-title">
+<section class="section" id="admin-workflow" aria-labelledby="admin-title">
   <div class="section-heading">
     <div>
-      <span class="workflow-kicker">Bus driver</span>
-      <h2 id="driver-title">Driver workflow placeholder</h2>
-      <p>This section is a placeholder for now. We can replace it with the real Bus Driver manual later.</p>
+      <span class="workflow-kicker">Admin</span>
+      <h2 id="admin-title">Admin workflow</h2>
+      <p>Use the admin account to manage access for officers and admins, including creating new users and removing existing ones when needed.</p>
     </div>
     <a class="button button-secondary" href="#officer-workflow">Back to officer workflow ↑</a>
   </div>
@@ -180,46 +180,33 @@ guide_label: Operations workflow
     <article class="workflow-step">
       <div class="workflow-copy">
         <span class="step-label">Step 1</span>
-        <h3>Open the driver view</h3>
-        <p>Placeholder content for the Bus Driver manual.</p>
+        <h3>Sign in as admin</h3>
+        <p>Open TransitOps and sign in with <code>admin@officer.com</code> and password <code>12345678</code>. The admin dashboard opens to the access management area.</p>
       </div>
-      <figure class="screenshot-slot">
-        <figcaption>
-          <span class="phone-mark" aria-hidden="true"></span>
-          <strong>Screenshot placeholder</strong>
-          <span>Replace this with the driver sign-in or home screen later.</span>
-        </figcaption>
-      </figure>
     </article>
 
     <article class="workflow-step">
       <div class="workflow-copy">
         <span class="step-label">Step 2</span>
-        <h3>Receive the diversion notice</h3>
-        <p>Placeholder content for the Bus Driver manual.</p>
+        <h3>Add a user</h3>
+        <p>Open the user management panel and choose whether to add an admin or an officer. Enter the user details, assign the correct role, and confirm the new account.</p>
       </div>
-      <figure class="screenshot-slot">
-        <figcaption>
-          <span class="phone-mark" aria-hidden="true"></span>
-          <strong>Screenshot placeholder</strong>
-          <span>Replace this with the route alert or notification view later.</span>
-        </figcaption>
-      </figure>
     </article>
 
     <article class="workflow-step">
       <div class="workflow-copy">
         <span class="step-label">Step 3</span>
-        <h3>Confirm the updated route</h3>
-        <p>Placeholder content for the Bus Driver manual.</p>
+        <h3>Remove a user</h3>
+        <p>Select the existing admin or officer account you want to remove, review the account details, and confirm the deletion or deactivation action.</p>
       </div>
-      <figure class="screenshot-slot">
-        <figcaption>
-          <span class="phone-mark" aria-hidden="true"></span>
-          <strong>Screenshot placeholder</strong>
-          <span>Replace this with the confirmed route screen later.</span>
-        </figcaption>
-      </figure>
+    </article>
+
+    <article class="workflow-step">
+      <div class="workflow-copy">
+        <span class="step-label">Step 4</span>
+        <h3>Verify access changes</h3>
+        <p>Check that the user list reflects the updated roles and that the removed account no longer has access. Once confirmed, sign out if you are done managing users.</p>
+      </div>
     </article>
   </div>
 </section>
