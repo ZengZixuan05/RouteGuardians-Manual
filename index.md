@@ -13,8 +13,7 @@ guide_label: Operations workflow
       <h1>TransitOps Judge Walkthrough</h1>
       <p class="lead">
         Follow the Operations Officer workflow to review an incident, compare diversion
-        options, approve the route, and dispatch notifications. The Bus Driver guide is
-        included below as a placeholder for now.
+        options, approve the route, and dispatch notifications. Follow the Admin workflow to add or remove admin, operations officer.
       </p>
       <div class="tag-row" style="margin-top: 22px;">
         <span class="tag">Incident review</span>
@@ -75,15 +74,15 @@ guide_label: Operations workflow
     </a>
     <a class="role-link" href="#driver-workflow">
       <span class="role-link-copy">
-        <strong>Bus Driver</strong>
-        <span>Placeholder content for the driver manual.</span>
+        <strong>Officer Admin</strong>
+        <span>Add and remove Officer and Admin</span>
       </span>
       <b aria-hidden="true">→</b>
     </a>
   </div>
   <div class="callout">
     <strong>Demo note</strong>
-    <span class="muted">The officer workflow uses the SVC 93 accident as the sample incident. The driver section is a draft for now.</span>
+    <span class="muted">The officer workflow uses the SVC 93 accident as the sample incident.</span>
   </div>
 </section>
 
@@ -104,12 +103,8 @@ guide_label: Operations workflow
         <h3>Open the app and sign in</h3>
         <p>Launch TransitOps and sign in with <code>officer@officer.com</code> and password <code>12345678</code>. The app opens to the incident feed.</p>
       </div>
-      <figure class="screenshot-slot">
-        <figcaption>
-          <span class="phone-mark" aria-hidden="true"></span>
-          <strong>Screenshot: Officer sign in</strong>
-          <span>Show the Operations Officer login screen with the credentials entered.</span>
-        </figcaption>
+      <figure class="screenshot-slot screenshot-image">
+        <img src="{{ '/assets/ss1.png' | relative_url }}" alt="Sample incident screenshot showing the SVC 93 accident at Lor Ah Soo" />
       </figure>
     </article>
 
@@ -305,4 +300,3 @@ guide_label: Operations workflow
     </article>
   </div>
 </section>
-

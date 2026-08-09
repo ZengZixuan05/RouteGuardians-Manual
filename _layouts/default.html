@@ -575,6 +575,13 @@
         text-align: center;
       }
 
+      .screenshot-image {
+        min-height: 0;
+        padding: 0;
+        border: 0;
+        background: transparent;
+      }
+
       .screenshot-slot figcaption {
         max-width: 24ch;
       }
@@ -618,6 +625,12 @@
         max-height: 560px;
         object-fit: contain;
         border-radius: 14px;
+      }
+
+      .screenshot-image img {
+        max-height: none;
+        border-radius: 16px;
+        box-shadow: 0 12px 30px rgba(18, 26, 33, 0.08);
       }
 
       .end-nav {
