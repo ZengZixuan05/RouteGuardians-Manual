@@ -183,6 +183,9 @@ guide_label: Operations workflow
         <h3>Sign in as admin</h3>
         <p>Open TransitOps and sign in with <code>admin@officer.com</code> and password <code>12345678</code>. The admin dashboard opens to the access management area.</p>
       </div>
+      <figure class="screenshot-slot screenshot-image">
+        <img src="{{ '/assets/admin1.png' | relative_url }}" alt="Admin sign in screen" />
+      </figure>
     </article>
 
     <article class="workflow-step">
@@ -191,6 +194,10 @@ guide_label: Operations workflow
         <h3>Add a user</h3>
         <p>Open the user management panel and choose whether to add an admin or an officer. Enter the user details, assign the correct role, and confirm the new account.</p>
       </div>
+      <figure class="screenshot-slot screenshot-image">
+        <img src="{{ '/assets/admin2.png' | relative_url }}" alt="Admin user management screen" />
+        <img src="{{ '/assets/admin3.png' | relative_url }}" alt="Admin user creation screen" />
+      </figure>
     </article>
 
     <article class="workflow-step">
