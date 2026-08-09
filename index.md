@@ -112,8 +112,7 @@ guide_label: Operations workflow
       <div class="workflow-copy">
         <span class="step-label">Step 2</span>
         <h3>Review the incident feed</h3>
-        <p>Check the live incident card for the demo case. The sample incident is the SVC 93 accident at Lor Ah Soo (Upp Paya Lebar Rd), marked as medium severity and awaiting assessment.</p>
-        <p>Confirm the passenger count and status before moving on to the detailed review.</p>
+        <p>Select an incident from the list displayed at the bottom-left of the dashboard. For this demonstration, we will use the SVC 93 incident at Lor Ah Soo.</p>
       </div>
       <figure class="screenshot-slot">
         <img src="{{ '/assets/ss1.png' | relative_url }}" alt="Sample incident screenshot showing the SVC 93 accident at Lor Ah Soo" />
@@ -124,7 +123,7 @@ guide_label: Operations workflow
       <div class="workflow-copy">
         <span class="step-label">Step 3</span>
         <h3>Select the incident</h3>
-        <p>Open the incident summary to review the location, service, severity, map context, and the current report status.</p>
+        <p>Click “Review” to examine the incident details. Photos submitted by bus captains may also be available, providing operators with a clearer understanding of the situation.</p>
       </div>
       <figure class="screenshot-slot">
         <figcaption>
@@ -139,7 +138,7 @@ guide_label: Operations workflow
       <div class="workflow-copy">
         <span class="step-label">Step 4</span>
         <h3>Review the incident details</h3>
-        <p>Go to <code>Review</code>. Check the report text and translate it into English if the incident was entered in another language.</p>
+        <p>Configure the notification settings to alert affected passengers and the next bus captain approaching the incident area.</p>
       </div>
       <figure class="screenshot-slot">
         <figcaption>
@@ -154,7 +153,7 @@ guide_label: Operations workflow
       <div class="workflow-copy">
         <span class="step-label">Step 5</span>
         <h3>Open decision settings</h3>
-        <p>Tap <code>Decision Settings</code> to prepare the route decision flow.</p>
+        <p>Review the AI-generated diversion route and make adjustments where necessary. Operators can modify the proposed route or add custom waypoints to better suit operational requirements.</p>
       </div>
       <figure class="screenshot-slot">
         <figcaption>
@@ -169,8 +168,7 @@ guide_label: Operations workflow
       <div class="workflow-copy">
         <span class="step-label">Step 6</span>
         <h3>Compare route options</h3>
-        <p>Open <code>AI Route Comparison</code> and review the suggested routes. Compare delay, feasibility, and the impact of each diversion.</p>
-        <p>You can create a custom route or edit an AI-generated route if needed.</p>
+        <p>Review the proposed directions and confirm that the diversion route is suitable before proceeding.</p>
       </div>
       <figure class="screenshot-slot">
         <figcaption>
@@ -185,7 +183,7 @@ guide_label: Operations workflow
       <div class="workflow-copy">
         <span class="step-label">Step 7</span>
         <h3>Review the final directions</h3>
-        <p>Check the confirmed route and make sure the directions match the approved diversion plan.</p>
+        <p>Review the bus services affected by the disruption and notify the relevant bus captains of the approved diversion.</p>
       </div>
       <figure class="screenshot-slot">
         <figcaption>
@@ -200,7 +198,7 @@ guide_label: Operations workflow
       <div class="workflow-copy">
         <span class="step-label">Step 8</span>
         <h3>Check affected buses</h3>
-        <p>Use <code>Check Affected Buses</code> to review the services flagged by the system and see which drivers should be notified.</p>
+        <p>Review the diversion summary and approve the confirmed route. Once approved, the system will automatically send the relevant notifications through the designated Telegram channel: <code>https://t.me/busreroute_huawei_hackathon</code>.</p>
       </div>
       <figure class="screenshot-slot">
         <figcaption>
@@ -215,7 +213,7 @@ guide_label: Operations workflow
       <div class="workflow-copy">
         <span class="step-label">Step 9</span>
         <h3>Approve the diversion</h3>
-        <p>Go to <code>Proceed to Approval</code>. Review the incident summary and selected diversion, then approve or reject the route.</p>
+        <p>Review the diversion summary and approve the confirmed route.</p>
       </div>
       <figure class="screenshot-slot">
         <figcaption>
@@ -230,7 +228,7 @@ guide_label: Operations workflow
       <div class="workflow-copy">
         <span class="step-label">Step 10</span>
         <h3>Dispatch notifications</h3>
-        <p>Once approved, the bus captain is notified about the reroute, passengers are notified, and the incident is marked as dispatched.</p>
+        <p>Once approved, the system will automatically send the relevant notifications through the designated Telegram channel.</p>
       </div>
       <figure class="screenshot-slot">
         <figcaption>
