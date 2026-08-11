@@ -853,6 +853,21 @@
         max-height: none;
       }
 
+      .screenshot-slot.screenshot-image.screenshot-pair {
+        padding: 0;
+      }
+
+      .screenshot-pair-grid {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .screenshot-slot.screenshot-image.screenshot-pair img + img {
+        margin-top: 0;
+      }
+
       .screenshot-slot.screenshot-image img[src*="/assets/android/"] {
         width: auto;
         max-width: min(100%, 360px);
@@ -1030,6 +1045,7 @@
       @media (max-width: 860px) {
         .hero-grid,
         .grid-2,
+        .screenshot-pair-grid,
         .role-links,
         .journey-list,
         .workflow-step,
