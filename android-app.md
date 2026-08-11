@@ -190,16 +190,18 @@ guide_label: Start here - Android app
     </article>
   </div>
 
-  <div class="callout sample-note">
-    <strong>Suggested values for the demo report</strong>
+  <div class="callout sample-note" id="sample-expected-values">
+    <strong>Expected AI output and manual-entry values</strong>
+    <p>After you tap <strong>Analyze Photos and Continue</strong>, TransitOps should autofill the report with the values below. Do not type them again when the AI output already matches.</p>
     <ul>
       <li>Bus service: <code>93</code>; vehicle plate: <code>SBS7530C</code>; bus type: <strong>Double decker</strong></li>
+      <li>Direction of travel: <strong>Direction 1</strong> — select this manually because direction is not autofilled</li>
       <li>Incident type: <strong>Traffic accident</strong>; severity: <strong>High</strong></li>
       <li>Closest location: <strong>Lor Ah Soo / Upper Paya Lebar Road</strong></li>
       <li>Passenger count: <code>41</code>; rain: <strong>Not raining</strong>; wheelchair passenger onboard: <strong>No</strong></li>
       <li>Description: <strong>Traffic accident obstructing the road near Lor Ah Soo. Diversion may be required.</strong></li>
     </ul>
-    <span class="muted">Review the AI-generated result and correct it to match these sample values before submitting. If tapping a save button opens the image instead, press and hold the image and choose <strong>Download image</strong> or <strong>Save image</strong>.</span>
+    <span class="muted">Use this list to verify the AI output, or as the complete reference if you choose <strong>Enter Details Manually</strong>. Correct only values that differ. If tapping a save button opens the image instead, press and hold the image and choose <strong>Download image</strong> or <strong>Save image</strong>.</span>
   </div>
 </section>
 
@@ -268,9 +270,9 @@ guide_label: Start here - Android app
     <article class="workflow-step">
       <div class="workflow-copy">
         <span class="step-label">Step 3</span>
-        <h3>Add evidence or enter details manually</h3>
+        <h3>Add the sample photos and let AI fill the report</h3>
         <p>For AI-assisted reporting, attach one clear <strong>Bus photo</strong> and one <strong>Incident photo</strong> using Camera, Photo Library, or Files. The bus photo should show the service number, licence plate, and deck type. For the prepared demo, use the two files from the <a href="#sample-test-case">sample test case</a> above.</p>
-        <p>Tap <strong>Analyze Photos and Continue</strong>. If photos or analysis are unavailable, tap <strong>Enter Details Manually</strong> instead.</p>
+        <p>Tap <strong>Analyze Photos and Continue</strong>. TransitOps should autofill the report details from the two images; only the direction of travel still needs to be selected. If photos or analysis are unavailable, tap <strong>Enter Details Manually</strong> instead.</p>
       </div>
       <figure class="screenshot-slot">
         <figcaption>
@@ -284,21 +286,15 @@ guide_label: Start here - Android app
     <article class="workflow-step">
       <div class="workflow-copy">
         <span class="step-label">Step 4</span>
-        <h3>Check and complete the report details</h3>
-        <p>Review every AI-filled value and correct anything that is wrong. If you chose manual entry, complete the same fields yourself:</p>
-        <ul>
-          <li>Bus service, direction of travel, vehicle plate, and bus deck type</li>
-          <li>Rain condition and whether a wheelchair passenger is onboard</li>
-          <li>Closest stop or location before the obstruction</li>
-          <li>Optional obstruction area on the map</li>
-          <li>Incident type, severity, details, and passenger count</li>
-        </ul>
+        <h3>Select Direction 1 and verify the autofill</h3>
+        <p><strong>Required for this demo:</strong> set <strong>Direction of travel</strong> to <strong>Direction 1</strong>. This is the only report value that photo analysis does not autofill.</p>
+        <p>Compare the remaining AI-filled fields with the <a href="#sample-expected-values">expected output above</a>. Do not re-enter values that already match; correct only any differences. If you chose manual entry, complete the form using that same reference.</p>
       </div>
       <figure class="screenshot-slot">
         <figcaption>
           <span class="phone-mark" aria-hidden="true"></span>
           <strong>Screenshot: Edit details</strong>
-          <span>Show the completed bus and incident fields before review.</span>
+          <span>Show the autofilled bus and incident fields with Direction 1 selected.</span>
         </figcaption>
       </figure>
     </article>
@@ -307,7 +303,7 @@ guide_label: Start here - Android app
       <div class="workflow-copy">
         <span class="step-label">Step 5</span>
         <h3>Review the submission summary</h3>
-        <p>Tap <strong>Review Summary</strong>. Check the photographs, bus information, operating conditions, location, severity, passenger count, and incident description. Use <strong>Back to edit details</strong> if anything needs to change.</p>
+        <p>Tap <strong>Review Summary</strong>. Check the photographs, bus information, <strong>Direction 1</strong>, operating conditions, location, severity, passenger count, and incident description. Use <strong>Back to edit details</strong> if anything needs to change.</p>
       </div>
       <figure class="screenshot-slot">
         <figcaption>
