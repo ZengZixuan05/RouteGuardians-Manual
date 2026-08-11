@@ -385,12 +385,12 @@ guide_label: Start here - Android app
         <p>Sign out of the guest account if necessary. Enter <code>admin@admin.com</code> with password <code>admin</code>, then tap <strong>Sign In</strong>. The app opens the <strong>Admin Portal</strong>.</p>
         <p>The Administrator account manages users only; incident reporting is disabled for this role.</p>
       </div>
-      <figure class="screenshot-slot">
-        <figcaption>
-          <span class="phone-mark" aria-hidden="true"></span>
-          <strong>Screenshot: Admin sign in</strong>
-          <span>Show the admin credentials entered on the sign-in screen.</span>
-        </figcaption>
+      <figure class="screenshot-slot screenshot-image">
+        <img
+          src="{{ '/assets/android/admin-login.jpg' | relative_url }}"
+          alt="TransitOps admin login view"
+          loading="lazy"
+        />
       </figure>
     </article>
 
@@ -400,12 +400,12 @@ guide_label: Start here - Android app
         <h3>Review configured Bus Captains</h3>
         <p>Scroll to <strong>Configured Bus Captains</strong>. Each row shows the captain’s full name, auto-generated employee ID, email address, and Active or Disabled status. Tap a row to open the complete account details.</p>
       </div>
-      <figure class="screenshot-slot">
-        <figcaption>
-          <span class="phone-mark" aria-hidden="true"></span>
-          <strong>Screenshot: Captain list</strong>
-          <span>Show configured captains and their account statuses.</span>
-        </figcaption>
+      <figure class="screenshot-slot screenshot-image">
+        <img
+          src="{{ '/assets/android/review-bus-captain.jpg' | relative_url }}"
+          alt="TransitOps admin review existing bus captains"
+          loading="lazy"
+        />
       </figure>
     </article>
 
@@ -416,12 +416,12 @@ guide_label: Start here - Android app
         <p>In <strong>Add Bus Captain</strong>, enter the new captain’s <strong>Email</strong> and <strong>Full name</strong>. Leave <strong>Active</strong> switched on for an account that should be usable, then tap <strong>Create Bus Captain</strong>.</p>
         <p>The app creates an employee ID in the format <code>BC-XXXX</code> and sends a password-setup email. The form clears after successful creation.</p>
       </div>
-      <figure class="screenshot-slot">
-        <figcaption>
-          <span class="phone-mark" aria-hidden="true"></span>
-          <strong>Screenshot: Add Bus Captain</strong>
-          <span>Show the completed email, full-name, and Active fields.</span>
-        </figcaption>
+      <figure class="screenshot-slot screenshot-image">
+        <img
+          src="{{ '/assets/android/add-bus-captain.jpg' | relative_url }}"
+          alt="TransitOps admin add new bus captains"
+          loading="lazy"
+        />
       </figure>
     </article>
 
@@ -431,12 +431,12 @@ guide_label: Start here - Android app
         <h3>Confirm the new account</h3>
         <p>Find the new captain under <strong>Configured Bus Captains</strong>. Confirm the correct name, email, employee ID, and status. Tap the row if you need to review the full account details.</p>
       </div>
-      <figure class="screenshot-slot">
-        <figcaption>
-          <span class="phone-mark" aria-hidden="true"></span>
-          <strong>Screenshot: New captain</strong>
-          <span>Show the newly created captain in the configured list.</span>
-        </figcaption>
+      <figure class="screenshot-slot screenshot-image">
+        <img
+          src="{{ '/assets/android/confirm-account.jpg' | relative_url }}"
+          alt="TransitOps admin confirm created account"
+          loading="lazy"
+        />
       </figure>
     </article>
 
@@ -446,12 +446,12 @@ guide_label: Start here - Android app
         <h3>Remove a Bus Captain</h3>
         <p>Tap the trash icon on the captain’s row, or open the captain and tap <strong>Delete Bus Captain</strong>. In the confirmation dialog, check that you selected the correct person, then tap <strong>Delete</strong>.</p>
       </div>
-      <figure class="screenshot-slot">
-        <figcaption>
-          <span class="phone-mark" aria-hidden="true"></span>
-          <strong>Screenshot: Delete confirmation</strong>
-          <span>Show the selected captain and the Delete Bus Captain dialog.</span>
-        </figcaption>
+      <figure class="screenshot-slot screenshot-image">
+        <img
+          src="{{ '/assets/android/delete-bus-captain.jpg' | relative_url }}"
+          alt="TransitOps admin delete bus captains"
+          loading="lazy"
+        />
       </figure>
     </article>
   </div>
