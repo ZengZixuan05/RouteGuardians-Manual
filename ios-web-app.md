@@ -158,11 +158,7 @@ guide_label: Step 3 - iOS web app
         <p>Open the web app. On the first visit, choose English, Chinese, Malay, or Tamil. Sign in with <code>guest@guest.com</code> and password <code>guest1234</code>; TransitOps opens <strong>My Incidents</strong> after it confirms the linked Bus Captain profile is active.</p>
       </div>
       <figure class="screenshot-slot">
-        <figcaption>
-          <span class="phone-mark" aria-hidden="true"></span>
-          <strong>Screenshot to add</strong>
-          <span>Language and Bus Captain sign-in screens.</span>
-        </figcaption>
+        <img src="{{ '/assets/ios/captain/Step 1.png' | relative_url }}" alt="TransitOps iOS web app Step 1 showing the language selection and sign in screen" loading="lazy" />
       </figure>
     </article>
 
@@ -173,11 +169,7 @@ guide_label: Step 3 - iOS web app
         <p>The incident list shows reports from newest to oldest with the incident type, location, bus service, reported time, and current status. Select a row to open its details, or use <strong>+ Add Report</strong> to begin a new report.</p>
       </div>
       <figure class="screenshot-slot">
-        <figcaption>
-          <span class="phone-mark" aria-hidden="true"></span>
-          <strong>Screenshot to add</strong>
-          <span>My Incidents list and status badges.</span>
-        </figcaption>
+        <img src="{{ '/assets/ios/captain/Step 2.png' | relative_url }}" alt="TransitOps iOS web app Step 2 showing the My Incidents list" loading="lazy" />
       </figure>
     </article>
 
@@ -189,11 +181,7 @@ guide_label: Step 3 - iOS web app
         <p>If photos cannot be used, choose <strong>Enter Details Manually</strong> to create the same operational report without photo upload or AI analysis.</p>
       </div>
       <figure class="screenshot-slot">
-        <figcaption>
-          <span class="phone-mark" aria-hidden="true"></span>
-          <strong>Screenshot to add</strong>
-          <span>Incident type, photo upload, and AI analysis screens.</span>
-        </figcaption>
+        <img src="{{ '/assets/ios/captain/Step 3.png' | relative_url }}" alt="TransitOps iOS web app Step 3 showing incident creation with photo upload and analysis" loading="lazy" />
       </figure>
     </article>
 
@@ -204,11 +192,7 @@ guide_label: Step 3 - iOS web app
         <p>Verify the service number, direction of travel, vehicle plate, rain condition, bus deck type, closest stop or location, severity, passenger count, and description. The web app also supports current location, Singapore place search, LTA bus-stop search, optional obstruction-area drawing, and browser speech-to-text dictation.</p>
       </div>
       <figure class="screenshot-slot">
-        <figcaption>
-          <span class="phone-mark" aria-hidden="true"></span>
-          <strong>Screenshot to add</strong>
-          <span>Editable report details, location search, and obstruction map.</span>
-        </figcaption>
+        <img src="{{ '/assets/ios/captain/Step 4.png' | relative_url }}" alt="TransitOps iOS web app Step 4 showing report details and edits" loading="lazy" />
       </figure>
     </article>
 
@@ -219,11 +203,7 @@ guide_label: Step 3 - iOS web app
         <p>Open <strong>Review Summary</strong>, check every item and attached photo, then submit once. TransitOps uploads photos to the existing <code>incident-photos</code> bucket, creates the report with <strong>Pending</strong> status, and returns to <strong>My Incidents</strong>.</p>
       </div>
       <figure class="screenshot-slot">
-        <figcaption>
-          <span class="phone-mark" aria-hidden="true"></span>
-          <strong>Screenshot to add</strong>
-          <span>Submission summary and successful return to the incident list.</span>
-        </figcaption>
+        <img src="{{ '/assets/ios/captain/Step 5.png' | relative_url }}" alt="TransitOps iOS web app Step 5 showing the review and submit summary" loading="lazy" />
       </figure>
     </article>
 
@@ -234,11 +214,7 @@ guide_label: Step 3 - iOS web app
         <p>Open the submitted report to view its status, photos, officer messages, and approved diversion action. Pending reports can be edited or deleted; reports under review can be checked manually with <strong>Check Now</strong> while the page also polls for updates.</p>
       </div>
       <figure class="screenshot-slot">
-        <figcaption>
-          <span class="phone-mark" aria-hidden="true"></span>
-          <strong>Screenshot to add</strong>
-          <span>Incident details, officer messages, and Check Now state.</span>
-        </figcaption>
+        <img src="{{ '/assets/ios/captain/Step 6.png' | relative_url }}" alt="TransitOps iOS web app Step 6 showing incident tracking and officer updates" loading="lazy" />
       </figure>
     </article>
 
@@ -249,11 +225,7 @@ guide_label: Step 3 - iOS web app
         <p>When the report becomes <strong>Route Ready</strong>, tap <strong>Go to Route</strong>. Review the diversion summary, start live guidance, and use Overview, Follow Me, Previous Step, and Next Step controls as needed.</p>
       </div>
       <figure class="screenshot-slot">
-        <figcaption>
-          <span class="phone-mark" aria-hidden="true"></span>
-          <strong>Screenshot to add</strong>
-          <span>Diversion summary and live route guidance map.</span>
-        </figcaption>
+        <img src="{{ '/assets/ios/captain/Step 7.png' | relative_url }}" alt="TransitOps iOS web app Step 7 showing the approved diversion route" loading="lazy" />
       </figure>
     </article>
 
@@ -264,11 +236,7 @@ guide_label: Step 3 - iOS web app
         <p>After the diversion or shift is complete, select <strong>End shift and resolve</strong>. The report moves to <strong>Resolved</strong>; if a route exists, the captain can reopen the report later and select <strong>View Route Taken</strong>.</p>
       </div>
       <figure class="screenshot-slot">
-        <figcaption>
-          <span class="phone-mark" aria-hidden="true"></span>
-          <strong>Screenshot to add</strong>
-          <span>Resolved report and route history view.</span>
-        </figcaption>
+        <img src="{{ '/assets/ios/captain/Step 8.png' | relative_url }}" alt="TransitOps iOS web app Step 8 showing resolved report history" loading="lazy" />
       </figure>
     </article>
   </div>
@@ -292,11 +260,7 @@ guide_label: Step 3 - iOS web app
         <p>Sign in with <code>admin@admin.com</code> and password <code>admin</code>. TransitOps routes this role to <strong>Admin Portal</strong> instead of <strong>My Incidents</strong>.</p>
       </div>
       <figure class="screenshot-slot">
-        <figcaption>
-          <span class="phone-mark" aria-hidden="true"></span>
-          <strong>Screenshot to add</strong>
-          <span>Administrator sign-in and Admin Portal landing screen.</span>
-        </figcaption>
+        <img src="{{ '/assets/ios/admin/Step 1.png' | relative_url }}" alt="TransitOps iOS web app admin Step 1 showing administrator sign in" loading="lazy" />
       </figure>
     </article>
 
@@ -307,11 +271,7 @@ guide_label: Step 3 - iOS web app
         <p>Enter the captain email and full name, keep <strong>Active</strong> enabled for immediate access, and select <strong>Create Bus Captain</strong>. TransitOps creates the employee ID and sends the password setup or reset email.</p>
       </div>
       <figure class="screenshot-slot">
-        <figcaption>
-          <span class="phone-mark" aria-hidden="true"></span>
-          <strong>Screenshot to add</strong>
-          <span>Add Bus Captain form and success state.</span>
-        </figcaption>
+        <img src="{{ '/assets/ios/admin/Step 2.png' | relative_url }}" alt="TransitOps iOS web app admin Step 2 showing add bus captain" loading="lazy" />
       </figure>
     </article>
 
@@ -322,11 +282,7 @@ guide_label: Step 3 - iOS web app
         <p>Select a captain row to view full name, email, employee ID, and active status. Use <strong>Delete Bus Captain</strong> only when access should be removed from the configured profile lists.</p>
       </div>
       <figure class="screenshot-slot">
-        <figcaption>
-          <span class="phone-mark" aria-hidden="true"></span>
-          <strong>Screenshot to add</strong>
-          <span>Configured captains list, details sheet, and delete confirmation.</span>
-        </figcaption>
+        <img src="{{ '/assets/ios/admin/Step 3.png' | relative_url }}" alt="TransitOps iOS web app admin Step 3 showing captain review and delete flow" loading="lazy" />
       </figure>
     </article>
   </div>
