@@ -154,6 +154,9 @@ guide_label: Step 2 - Operations Officer
         <h3>Configure decision settings</h3>
         <p>Configure the notification settings for affected passengers and the next Bus Captain approaching the incident area.</p>
       </div>
+      <figure class="screenshot-slot screenshot-image">
+        <img src="{{ '/assets/webapp/ss5.png' | relative_url }}" alt="Operations Officer decision settings screen for the incident workflow" loading="lazy" />
+      </figure>
     </article>
 
     <article class="workflow-step">
