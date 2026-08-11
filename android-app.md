@@ -389,6 +389,8 @@ guide_label: Start here - Android app
         <img
           src="{{ '/assets/android/admin-login.jpg' | relative_url }}"
           alt="TransitOps admin login view"
+          width="462"
+          height="1026"
           loading="lazy"
         />
       </figure>
@@ -404,6 +406,8 @@ guide_label: Start here - Android app
         <img
           src="{{ '/assets/android/review-bus-captain.jpg' | relative_url }}"
           alt="TransitOps admin review existing bus captains"
+          width="468"
+          height="1028"
           loading="lazy"
         />
       </figure>
@@ -420,6 +424,8 @@ guide_label: Start here - Android app
         <img
           src="{{ '/assets/android/add-bus-captain.jpg' | relative_url }}"
           alt="TransitOps admin add new bus captains"
+          width="464"
+          height="1032"
           loading="lazy"
         />
       </figure>
@@ -435,6 +441,8 @@ guide_label: Start here - Android app
         <img
           src="{{ '/assets/android/confirm-account.jpg' | relative_url }}"
           alt="TransitOps admin confirm created account"
+          width="464"
+          height="1028"
           loading="lazy"
         />
       </figure>
@@ -450,6 +458,8 @@ guide_label: Start here - Android app
         <img
           src="{{ '/assets/android/delete-bus-captain.jpg' | relative_url }}"
           alt="TransitOps admin delete bus captains"
+          width="467"
+          height="1032"
           loading="lazy"
         />
       </figure>
