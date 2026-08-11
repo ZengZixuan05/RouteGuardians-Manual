@@ -148,7 +148,7 @@ guide_label: Step 2 - Operations Officer
       </figure>
     </article>
 
-    <article class="workflow-step">
+    <article class="workflow-step workflow-step-stack">
       <div class="workflow-copy">
         <span class="step-label">Step 4</span>
         <h3>Configure decision settings</h3>
