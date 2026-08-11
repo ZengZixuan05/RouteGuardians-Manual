@@ -18,6 +18,15 @@ guide_label: Step 3 - iOS web app
         Apple Developer Program access, so this project provides a browser-based version
         that judges can open immediately on iPhone, iPad, desktop, or Android.
       </p>
+      <p class="dashboard-access">
+        <strong>Live web app:</strong>
+        <a
+          class="text-link"
+          href="https://huawei-webapp.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >huawei-webapp.vercel.app <span aria-hidden="true">&nearr;</span></a>
+      </p>
       <div class="tag-row" style="margin-top: 22px;">
         <span class="tag">iOS-style workflow</span>
         <span class="tag">Same Supabase backend</span>
@@ -69,8 +78,7 @@ guide_label: Step 3 - iOS web app
     demonstration, distributing that native app would require paid Apple Developer
     Program access and the extra TestFlight or App Store publishing flow. To avoid
     making judges install through a gated iOS channel, TransitOps Web recreates the
-    iOS captain and admin workflows in the browser. Open the deployed app at
-    <a class="text-link" href="https://huawei-webapp.vercel.app/" target="_blank" rel="noopener noreferrer">huawei-webapp.vercel.app</a>.
+    iOS captain and admin workflows in the browser.
   </p>
   <div class="callout">
     <strong>What remains the same</strong>
