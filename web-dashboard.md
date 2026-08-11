@@ -159,12 +159,15 @@ guide_label: Step 2 - Operations Officer
       </figure>
     </article>
 
-    <article class="workflow-step">
+    <article class="workflow-step workflow-step-stack">
       <div class="workflow-copy">
         <span class="step-label">Step 5</span>
         <h3>Compare AI routes</h3>
         <p>Review the AI-generated diversion route and make adjustments where necessary. You can modify the proposed route or add custom waypoints to better suit operational requirements.</p>
       </div>
+      <figure class="screenshot-slot screenshot-image">
+        <img src="{{ '/assets/webapp/ss7.png' | relative_url }}" alt="Operations Officer AI route comparison screen for the diversion workflow" loading="lazy" />
+      </figure>
     </article>
 
     <article class="workflow-step workflow-step-stack">
