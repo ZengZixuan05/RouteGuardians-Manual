@@ -572,6 +572,7 @@
       .workflow-list {
         display: grid;
         gap: 18px;
+        min-width: 0;
       }
 
       .workflow-step {
@@ -579,6 +580,7 @@
         grid-template-columns: minmax(0, 1.15fr) minmax(250px, 0.85fr);
         gap: 24px;
         align-items: stretch;
+        min-width: 0;
         padding: 22px;
         border: 1px solid rgba(29, 35, 43, 0.1);
         border-radius: 24px;
@@ -587,6 +589,7 @@
 
       .workflow-copy {
         align-self: center;
+        min-width: 0;
       }
 
       .step-label {
@@ -847,6 +850,7 @@
         padding: 0.16em 0.38em;
         border-radius: 6px;
         background: rgba(29, 35, 43, 0.08);
+        overflow-wrap: anywhere;
       }
 
       @media (max-width: 860px) {
