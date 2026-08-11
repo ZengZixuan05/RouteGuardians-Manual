@@ -314,11 +314,11 @@ guide_label: Start here - Android app
       </figure>
     </article>
 
-    <article class="workflow-step">
+    <article class="workflow-step" id="submit-incident">
       <div class="workflow-copy">
         <span class="step-label">Step 6</span>
-        <h3>Submit the incident</h3>
-        <p>When every detail is correct, tap <strong>Submit Incident</strong>. Wait for the app to return to <strong>My Incidents</strong> and confirm that the new report appears in the list.</p>
+        <h3>Submit the incident and return to My Incidents</h3>
+        <p>When every detail is correct, tap <strong>Submit Incident</strong>. Wait for the app to return to <strong>My Incidents</strong>, where you can view all incidents and confirm that the new report appears in the list.</p>
       </div>
       <figure class="screenshot-slot screenshot-image">
         <img
