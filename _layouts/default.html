@@ -53,6 +53,8 @@
       }
 
       .topbar {
+        position: relative;
+        z-index: 20;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -139,6 +141,10 @@
         position: relative;
       }
 
+      .nav-menu[open] {
+        z-index: 30;
+      }
+
       .nav-menu summary {
         list-style: none;
         cursor: pointer;
@@ -174,7 +180,7 @@
 
       .nav-dropdown {
         position: absolute;
-        z-index: 5;
+        z-index: 50;
         top: calc(100% + 8px);
         right: 0;
         display: grid;
