@@ -6,8 +6,14 @@ RouteGuardians Manual contains the complete TransitOps demonstration flow: a Bus
 
 - [Open the published manual](https://zengzixuan05.github.io/RouteGuardians-Manual/) (starts with the Android app)
 - [Open the published web-dashboard guide](https://zengzixuan05.github.io/RouteGuardians-Manual/web-dashboard/)
+- [Open the published iOS web-app guide](https://zengzixuan05.github.io/RouteGuardians-Manual/ios-web-app/)
 - [View the Android guide source](./android-app.md)
 - [View the web-dashboard guide source](./web-dashboard.md)
+- [View the iOS web-app guide source](./ios-web-app.md)
+
+## iOS web app note
+
+Publishing a native iOS build through TestFlight or the App Store requires paid Apple Developer Program access. For judging, the project includes a browser-based TransitOps Web version that simulates the iOS Bus Captain experience while using the same backend workflow. See [README copy.md](./README%20copy.md) for implementation notes and [USER_GUIDE.md](./USER_GUIDE.md) for the complete web-app user guide.
 
 ## Android prototype download
 

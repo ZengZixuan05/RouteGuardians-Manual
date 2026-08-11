@@ -237,8 +237,11 @@ guide_label: Step 2 - Web dashboard
 
 <section class="section end-nav">
   <div>
-    <h2>Complete the end-to-end test</h2>
-    <p style="margin: 0;">Return to the Android app, refresh the submitted report, and open the approved diversion route.</p>
+    <h2>Continue testing</h2>
+    <p style="margin: 0;">Open the iOS-style web app guide for the third tab, or return to Android to refresh the submitted report and open the approved diversion route.</p>
   </div>
-  <a class="button" href="{{ '/android-app/' | relative_url }}#guest-workflow">Return to the Android guide <span aria-hidden="true">&rarr;</span></a>
+  <div class="hero-actions" style="margin-top: 0;">
+    <a class="button" href="{{ '/ios-web-app/' | relative_url }}">Open iOS web app guide <span aria-hidden="true">&rarr;</span></a>
+    <a class="button button-secondary" href="{{ '/android-app/' | relative_url }}#guest-workflow">Return to Android guide</a>
+  </div>
 </section>
