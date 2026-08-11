@@ -144,7 +144,7 @@ guide_label: Step 2 - Operations Officer
         <p>Click <strong>Review</strong> to examine the incident details. Confirm Service <strong>45</strong>, vehicle <code>SBS7530C</code>, <strong>Direction 1 towards Yio Chu Kang</strong>, and the Lor Ah Soo / Upper Paya Lebar Road location. Review the photos and confirm that they match the reported situation.</p>
       </div>
       <figure class="screenshot-slot screenshot-image screenshot-stack">
-        <img src="{{ '/assets/webapp/ss3.png' | relative_url }}" alt="Operations Officer review screen showing incident details and route information" loading="lazy" />
+        <img src="{{ '/assets/webapp/ss3_new.png' | relative_url }}" alt="Operations Officer review screen showing incident details and route information" loading="lazy" />
         <img src="{{ '/assets/webapp/ss4.png' | relative_url }}" alt="Operations Officer review screen showing the second supporting screenshot for the incident review" loading="lazy" />
       </figure>
     </article>
