@@ -207,7 +207,7 @@ guide_label: Step 3 - iOS web app
       </figure>
     </article>
 
-    <article class="workflow-step">
+    <article class="workflow-step workflow-step-stack">
       <div class="workflow-copy">
         <span class="step-label">Step 6</span>
         <h3>Track officer updates</h3>
@@ -229,13 +229,13 @@ guide_label: Step 3 - iOS web app
       </figure>
     </article>
 
-    <article class="workflow-step">
+    <article class="workflow-step workflow-step-stack">
       <div class="workflow-copy">
         <span class="step-label">Step 8</span>
         <h3>Resolve and review route history</h3>
         <p>After the diversion or shift is complete, select <strong>End shift and resolve</strong>. The report moves to <strong>Resolved</strong>; if a route exists, the captain can reopen the report later and select <strong>View Route Taken</strong>.</p>
       </div>
-      <figure class="screenshot-slot screenshot-image">
+      <figure class="screenshot-slot screenshot-image screenshot-stack">
         <img src="{{ '/assets/ios/captain/Step 8.png' | relative_url }}" alt="TransitOps iOS web app Step 8 showing resolved report history" loading="lazy" />
       </figure>
     </article>
