@@ -167,12 +167,15 @@ guide_label: Step 2 - Operations Officer
       </div>
     </article>
 
-    <article class="workflow-step">
+    <article class="workflow-step workflow-step-stack">
       <div class="workflow-copy">
         <span class="step-label">Step 6</span>
         <h3>Review directions</h3>
         <p>Review the proposed directions and confirm that the diversion route is suitable before proceeding.</p>
       </div>
+      <figure class="screenshot-slot screenshot-image">
+        <img src="{{ '/assets/webapp/ss8.png' | relative_url }}" alt="Operations Officer directions screen showing the approved diversion route review" loading="lazy" />
+      </figure>
     </article>
 
     <article class="workflow-step">
