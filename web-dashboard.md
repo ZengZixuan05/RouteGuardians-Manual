@@ -249,6 +249,6 @@ guide_label: Step 2 - Operations Officer
   </div>
   <div class="hero-actions" style="margin-top: 0;">
     <a class="button" href="{{ '/android-app/' | relative_url }}#track-response">Return to Android Step 7 <span aria-hidden="true">&rarr;</span></a>
-    <a class="button button-secondary" href="{{ '/ios-web-app/' | relative_url }}#captain-workflow">Return to iOS Step 1 guide</a>
+    <a class="button button-secondary" href="{{ '/ios-web-app/' | relative_url }}#open-approved-diversion">Return to iOS Step 7</a>
   </div>
 </section>

@@ -206,18 +206,27 @@ guide_label: Step 1 - iOS web app
       <div class="workflow-copy">
         <span class="step-label">Step 6</span>
         <h3>Track officer updates</h3>
-        <p>Open the submitted report to view its status, photos, officer messages, and approved diversion action. Pending reports can be edited or deleted; reports under review can be checked manually with <strong>Check Now</strong> while the page also polls for updates.</p>
+        <p>Open the submitted report to view its status, photos, and officer messages. Pending reports can be edited or deleted; reports under review can be checked manually with <strong>Check Now</strong> while the page also polls for updates.</p>
       </div>
       <figure class="screenshot-slot screenshot-image">
         <img src="{{ '/assets/ios/captain/Step 6.png' | relative_url }}" alt="TransitOps iOS web app Step 6 showing incident tracking and officer updates" loading="lazy" />
       </figure>
     </article>
 
-    <article class="workflow-step">
+    <aside class="workflow-checkpoint" aria-labelledby="ios-dashboard-checkpoint-title">
+      <div>
+        <span class="workflow-kicker">Required checkpoint before Step 7</span>
+        <h3 id="ios-dashboard-checkpoint-title">Pause and complete the Operations Officer workflow</h3>
+        <p>The submitted incident must be reviewed in the web dashboard before the iOS web app can show an approved diversion. Open the Operations Officer guide, use its live-dashboard link, find this incident, approve and dispatch the diversion route, then return here and continue with Step 7.</p>
+      </div>
+      <a class="button" href="{{ '/web-dashboard/' | relative_url }}">Open Operations Officer guide <span aria-hidden="true">&rarr;</span></a>
+    </aside>
+
+    <article class="workflow-step" id="open-approved-diversion">
       <div class="workflow-copy">
         <span class="step-label">Step 7</span>
         <h3>Open the approved diversion</h3>
-        <p>When the report becomes <strong>Route Ready</strong>, tap <strong>Go to Route</strong>. Review the diversion summary, start live guidance, and use Overview, Follow Me, Previous Step, and Next Step controls as needed.</p>
+        <p>After completing the required Operations Officer checkpoint above, return to the submitted report. When the report becomes <strong>Route Ready</strong>, tap <strong>Go to Route</strong>. Review the diversion summary, start live guidance, and use Overview, Follow Me, Previous Step, and Next Step controls as needed.</p>
       </div>
       <figure class="screenshot-slot screenshot-image">
         <img src="{{ '/assets/ios/captain/Step 7.png' | relative_url }}" alt="TransitOps iOS web app Step 7 showing the approved diversion route" loading="lazy" />
