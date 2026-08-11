@@ -1,6 +1,6 @@
 # RouteGuardians Manual
 
-RouteGuardians Manual contains the complete TransitOps demonstration flow: a Bus Captain creates an incident in the Android app or iOS web app, an Operations Officer reviews it on the web dashboard, and the captain receives the approved route in the mobile workflow.
+RouteGuardians Manual contains the complete TransitOps demonstration flow. The prepared judging path uses the Android app for a Service 45 incident, the Operations Officer web dashboard for review and approval, and the Android app again to receive the approved route. The iOS web app is a separate alternate walkthrough.
 
 ## Guides
 
@@ -13,7 +13,7 @@ RouteGuardians Manual contains the complete TransitOps demonstration flow: a Bus
 
 ## iOS web app note
 
-Publishing a native iOS build through TestFlight or the App Store requires paid Apple Developer Program access. For judging, the project includes a browser-based TransitOps Web version that simulates the iOS Bus Captain experience while using the same backend workflow.
+Publishing a native iOS build through TestFlight or the App Store requires paid Apple Developer Program access. The project therefore includes a browser-based TransitOps Web version that simulates the iOS Bus Captain experience while using the same backend workflow. Its screenshots use separate example records; use Android for the prepared Service 45 judging run.
 
 ## Android prototype download
 
@@ -29,14 +29,14 @@ Publishing a native iOS build through TestFlight or the App Store requires paid 
 
 This is a debug-signed competition prototype, not a production Play Store or AppGallery release. Follow the complete download, security, and installation instructions in the [Android app guide](https://zengzixuan05.github.io/RouteGuardians-Manual/android-app/#install-app).
 
-## Sample incident test case
+## Sample Service 45 incident test case
 
 Save both images to the test phone before starting the Bus Captain workflow:
 
-- [Download the sample double-decker bus photo](./assets/sample-test-case/double-decker-bus.jpg?raw=1)
+- [Download the sample Service 45 double-decker bus photo](./assets/sample-test-case/bus-service-45.png?raw=1)
 - [Download the sample traffic-accident photo](./assets/sample-test-case/car-accident.jpg?raw=1)
 
-Use `double-decker-bus.jpg` as the **Bus photo** and `car-accident.jpg` as the **Incident photo**. The Android guide provides the matching test values to enter before submitting the report.
+Use `bus-service-45.png` as the **Bus photo** and `car-accident.jpg` as the **Incident photo**. For the route-specific field, select **Direction 1: Upper East Coast Terminal → Yio Chu Kang**. The Android guide provides the remaining matching values to verify before submitting the report.
 
 ## Demo credentials
 

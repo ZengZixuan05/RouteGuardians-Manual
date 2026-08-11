@@ -13,7 +13,8 @@ guide_label: Step 2 - Operations Officer
       <div class="eyebrow">Step 2 - Operations Officer</div>
       <h1>TransitOps Operations Officer Guide</h1>
       <p class="lead">
-        Continue here after a Bus Captain has submitted an incident through either Step 1 mobile app.
+        Continue here after a Bus Captain has submitted an incident through a Step 1 mobile app.
+        The prepared Service 45 test case on this page comes from the Android workflow.
         Follow the Operations Officer workflow to review the report, compare diversion options,
         approve the route, and dispatch notifications. Use the Admin workflow separately to manage dashboard users.
       </p>
@@ -62,7 +63,7 @@ guide_label: Step 2 - Operations Officer
       </div>
       <div class="quickfact">
         <small>Sample incident</small>
-        <strong>SVC 93 accident at Lor Ah Soo (Upp Paya Lebar Rd)</strong>
+        <strong>SVC 45 accident at Lor Ah Soo (Upp Paya Lebar Rd)</strong>
       </div>
     </aside>
   </div>
@@ -70,11 +71,11 @@ guide_label: Step 2 - Operations Officer
 
 <section class="section" aria-labelledby="prerequisite-title">
   <span class="workflow-kicker">Before you begin</span>
-  <h2 id="prerequisite-title">Create the incident in a Step 1 mobile app first</h2>
-  <p>The dashboard is the second part of the demonstration. Sign in as Guest / Bus Captain in either the Android app or the iOS web app, submit the prepared SVC 93 incident, and then locate that report in the active incident feed.</p>
+  <h2 id="prerequisite-title">Create the Service 45 incident in Android first</h2>
+  <p>The dashboard is the second part of the Android demonstration. Sign in as Guest / Bus Captain in the Android app, submit the prepared SVC 45 Direction 1 incident, and then locate that report in the active incident feed.</p>
   <div class="callout">
     <strong>Need to create the report?</strong>
-    <span class="muted"><a class="text-link" href="{{ '/android-app/' | relative_url }}#guest-workflow">Open the Android Bus Captain workflow</a> or <a class="text-link" href="{{ '/ios-web-app/' | relative_url }}#captain-workflow">open the iOS web app captain workflow</a>, submit the report, and then return to this page.</span>
+    <span class="muted"><a class="text-link" href="{{ '/android-app/' | relative_url }}#guest-workflow">Open the Android Bus Captain workflow</a>, submit the prepared Service 45 report, and then return to this page. Use the iOS guide separately for the alternate browser-based demonstration.</span>
   </div>
 </section>
 
@@ -98,8 +99,8 @@ guide_label: Step 2 - Operations Officer
     </a>
   </div>
   <div class="callout">
-    <strong>Demo note</strong>
-    <span class="muted">The officer workflow uses the SVC 93 accident submitted from either Step 1 mobile app.</span>
+    <strong>Current demo record</strong>
+    <span class="muted">Use the SVC 45 accident submitted from the Android app. Its Direction 1 route runs from Upper East Coast Terminal towards Yio Chu Kang. The screenshots show where controls appear; if an older captured value differs, follow the written Service 45 instructions.</span>
   </div>
 </section>
 
@@ -108,9 +109,14 @@ guide_label: Step 2 - Operations Officer
     <div>
       <span class="workflow-kicker">Operations officer</span>
       <h2 id="officer-title">Officer workflow</h2>
-      <p>Use the Operations Officer account to review the incident feed, examine the submitted SVC 93 accident, and complete the diversion approval flow.</p>
+      <p>Use the Operations Officer account to review the incident feed, examine the submitted SVC 45 Direction 1 accident, and complete the diversion approval flow.</p>
     </div>
     <a class="workflow-jump" href="#admin-workflow">Go to admin workflow &darr;</a>
+  </div>
+
+  <div class="callout" style="margin: 0 0 18px;">
+    <strong>Follow the current Service 45 record</strong>
+    <span class="muted">The screenshots below are interface references from an earlier seeded report. Ignore any embedded service, vehicle, route, weather, or severity value that differs. Select the newly submitted SVC 45 incident and use the written Direction 1 route details on this page.</span>
   </div>
 
   <div class="workflow-list">
@@ -121,7 +127,7 @@ guide_label: Step 2 - Operations Officer
         <p>Open TransitOps in the browser and sign in with <code>officer@officer.com</code> and password <code>12345678</code>. The dashboard opens to the incident feed.</p>
       </div>
       <figure class="screenshot-slot screenshot-image">
-        <img src="{{ '/assets/ss1.png' | relative_url }}" alt="Sample incident screenshot showing the SVC 93 accident at Lor Ah Soo" />
+        <img src="{{ '/assets/ss1.png' | relative_url }}" alt="Operations Officer sign-in screen" />
       </figure>
     </article>
 
@@ -129,10 +135,11 @@ guide_label: Step 2 - Operations Officer
       <div class="workflow-copy">
         <span class="step-label">Step 2</span>
         <h3>Select the submitted incident</h3>
-        <p>Select an incident from the list at the bottom-left of the dashboard. For this demonstration, choose the SVC 93 incident at Lor Ah Soo that was submitted through Android or the iOS web app.</p>
+        <p>Select an incident from the list at the bottom-left of the dashboard. For this demonstration, choose the SVC 45 incident at Lor Ah Soo / Upper Paya Lebar Road that was submitted through the Android app.</p>
       </div>
       <figure class="screenshot-slot screenshot-image">
         <img src="{{ '/assets/ss2.png' | relative_url }}" alt="Operations Officer dashboard showing the submitted incident selected from the feed" loading="lazy" />
+        <figcaption class="screenshot-data-note"><strong>Legacy feed reference:</strong> select the newly submitted SVC 45 report, not an older example row visible here.</figcaption>
       </figure>
     </article>
 
@@ -140,9 +147,10 @@ guide_label: Step 2 - Operations Officer
       <div class="workflow-copy">
         <span class="step-label">Step 3</span>
         <h3>Review the incident</h3>
-        <p>Click <strong>Review</strong> to examine the incident details. Review the photos submitted by the Bus Captain and confirm that they match the reported situation.</p>
+        <p>Click <strong>Review</strong> to examine the incident details. Confirm Service <strong>45</strong>, vehicle <code>SBS7530C</code>, <strong>Direction 1 towards Yio Chu Kang</strong>, and the Lor Ah Soo / Upper Paya Lebar Road location. Review the photos and confirm that they match the reported situation.</p>
       </div>
       <figure class="screenshot-slot screenshot-image screenshot-stack">
+        <figcaption class="screenshot-data-note"><strong>Legacy UI reference:</strong> ignore the embedded example values in both images; verify Service 45, SBS7530C, and Direction 1 towards Yio Chu Kang.</figcaption>
         <img src="{{ '/assets/ss3.png' | relative_url }}" alt="Operations Officer review screen showing incident details and route information" loading="lazy" />
         <img src="{{ '/assets/ss4.png' | relative_url }}" alt="Operations Officer review screen showing the second supporting screenshot for the incident review" loading="lazy" />
       </figure>
@@ -152,10 +160,11 @@ guide_label: Step 2 - Operations Officer
       <div class="workflow-copy">
         <span class="step-label">Step 4</span>
         <h3>Configure decision settings</h3>
-        <p>Configure the notification settings for affected passengers and the next Bus Captain approaching the incident area.</p>
+        <p>Configure the notification settings for affected passengers and the next Service 45 Bus Captain approaching the incident area.</p>
       </div>
       <figure class="screenshot-slot screenshot-image">
         <img src="{{ '/assets/webapp/ss5.png' | relative_url }}" alt="Operations Officer decision settings screen for the incident workflow" loading="lazy" />
+        <figcaption class="screenshot-data-note"><strong>Legacy UI reference:</strong> notify the following Service 45 Bus Captain for this test.</figcaption>
       </figure>
     </article>
 
@@ -163,10 +172,11 @@ guide_label: Step 2 - Operations Officer
       <div class="workflow-copy">
         <span class="step-label">Step 5</span>
         <h3>Compare AI routes</h3>
-        <p>Review the AI-generated diversion route and make adjustments where necessary. You can modify the proposed route or add custom waypoints to better suit operational requirements.</p>
+        <p>Review the AI-generated diversion for Service 45 Direction 1. Make adjustments where necessary so the route bypasses the Lor Ah Soo obstruction while continuing towards Yio Chu Kang. You can modify the proposed route or add custom waypoints.</p>
       </div>
       <figure class="screenshot-slot screenshot-image">
         <img src="{{ '/assets/webapp/ss7.png' | relative_url }}" alt="Operations Officer AI route comparison screen for the diversion workflow" loading="lazy" />
+        <figcaption class="screenshot-data-note"><strong>Legacy UI reference:</strong> assess the newly generated Service 45 Direction 1 diversion.</figcaption>
       </figure>
     </article>
 
@@ -174,10 +184,11 @@ guide_label: Step 2 - Operations Officer
       <div class="workflow-copy">
         <span class="step-label">Step 6</span>
         <h3>Review directions</h3>
-        <p>Review the proposed directions and confirm that the diversion route is suitable before proceeding.</p>
+        <p>Confirm that the diversion leaves the original Service 45 route before the obstruction and rejoins the Direction 1 corridor towards Yio Chu Kang after it is safe to do so.</p>
       </div>
       <figure class="screenshot-slot screenshot-image">
         <img src="{{ '/assets/webapp/ss8.png' | relative_url }}" alt="Operations Officer directions screen showing the approved diversion route review" loading="lazy" />
+        <figcaption class="screenshot-data-note"><strong>Legacy UI reference:</strong> confirm the current Service 45 route towards Yio Chu Kang.</figcaption>
       </figure>
     </article>
 
@@ -196,10 +207,11 @@ guide_label: Step 2 - Operations Officer
       <div class="workflow-copy">
         <span class="step-label">Step 8</span>
         <h3>Approve and dispatch</h3>
-        <p>Review the diversion summary and approve the confirmed route. The system notifies the Bus Captain and sends passenger notifications through the designated Telegram channel: <code>https://t.me/busreroute_huawei_hackathon</code>.</p>
+        <p>Confirm that the summary identifies Service 45 and vehicle <code>SBS7530C</code>, then approve the route. The system notifies the Bus Captain and sends passenger notifications through the designated Telegram channel: <code>https://t.me/busreroute_huawei_hackathon</code>.</p>
       </div>
       <figure class="screenshot-slot screenshot-image">
         <img src="{{ '/assets/webapp/ss10.png' | relative_url }}" alt="Operations Officer approve and dispatch screen for the diversion workflow" loading="lazy" />
+        <figcaption class="screenshot-data-note"><strong>Legacy UI reference:</strong> the live approval summary should show Service 45 and SBS7530C.</figcaption>
       </figure>
     </article>
   </div>

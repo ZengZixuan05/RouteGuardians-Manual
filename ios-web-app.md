@@ -145,6 +145,11 @@ guide_label: Step 1 - iOS web app
     <a class="workflow-jump" href="#admin-workflow">Go to admin workflow &darr;</a>
   </div>
 
+  <div class="callout" style="margin: 0 0 18px;">
+    <strong>Separate iOS example data</strong>
+    <span class="muted">The screenshots in this walkthrough show earlier iOS test records and are not the prepared Service 45 judging case. Use the Android guide for the Service 45 end-to-end test. If you demonstrate iOS separately, follow the controls shown here and select the report created during that iOS session.</span>
+  </div>
+
   <div class="workflow-list">
     <article class="workflow-step">
       <div class="workflow-copy">
