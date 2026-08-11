@@ -54,7 +54,7 @@ guide_label: Step 3 - iOS web app
       </div>
       <div class="quickfact">
         <small>Best judging link</small>
-        <strong>Use the deployed HTTPS web app URL</strong>
+        <strong><a class="text-link" href="https://huawei-webapp.vercel.app/" target="_blank" rel="noopener noreferrer">huawei-webapp.vercel.app</a></strong>
         <span class="muted">Camera, location, microphone, and app-like installation work best over HTTPS.</span>
       </div>
     </aside>
@@ -69,7 +69,8 @@ guide_label: Step 3 - iOS web app
     demonstration, distributing that native app would require paid Apple Developer
     Program access and the extra TestFlight or App Store publishing flow. To avoid
     making judges install through a gated iOS channel, TransitOps Web recreates the
-    iOS captain and admin workflows in the browser.
+    iOS captain and admin workflows in the browser. Open the deployed app at
+    <a class="text-link" href="https://huawei-webapp.vercel.app/" target="_blank" rel="noopener noreferrer">huawei-webapp.vercel.app</a>.
   </p>
   <div class="callout">
     <strong>What remains the same</strong>
