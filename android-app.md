@@ -13,9 +13,9 @@ guide_label: Step 1 - Android app
       <div class="eyebrow">Step 1 - Android app manual</div>
       <h1>TransitOps Android App Guide</h1>
       <p class="lead">
-        Begin with this Bus Captain workflow, or use the iOS web app as the alternate
-        Step 1 mobile workflow. The captain must submit an incident before the Operations
-        Officer can review and route it on the web dashboard.
+        Use this Bus Captain workflow for the prepared Service 45 test case. The iOS web app
+        offers the same test images and expected values in its own walkthrough. The captain must submit
+        an incident before the Operations Officer can review and route it on the web dashboard.
         Use the Administrator workflow separately to manage Bus Captain accounts.
       </p>
       <div class="tag-row" style="margin-top: 22px;">
@@ -58,14 +58,14 @@ guide_label: Step 1 - Android app
 
 <section class="section" aria-labelledby="journey-title">
   <span class="workflow-kicker">Recommended test order</span>
-  <h2 id="journey-title">One incident across mobile and dashboard</h2>
-  <p>Use either Step 1 mobile guide to submit the same sample report, then complete Step 2 in the Operations Officer dashboard.</p>
+  <h2 id="journey-title">One Service 45 incident across Android and dashboard</h2>
+  <p>Submit the prepared Service 45 report from Android, then complete Step 2 in the Operations Officer dashboard. Judges using iOS can follow the same test case from the iOS guide.</p>
   <ol class="journey-list">
     <li class="journey-step">
       <span class="journey-number" aria-hidden="true">1</span>
       <div>
-        <strong>Report in Android or iOS</strong>
-        <p>The Bus Captain signs in as Guest, adds the two sample images, checks the details, and submits the incident from a Step 1 mobile app.</p>
+        <strong>Report in Android</strong>
+        <p>The Bus Captain signs in as Guest, adds the two Service 45 sample images, checks the route-specific details, and submits the incident.</p>
       </div>
     </li>
     <li class="journey-step">
@@ -165,14 +165,14 @@ guide_label: Step 1 - Android app
 
   <div class="sample-grid">
     <article class="sample-card">
-      <a class="sample-media" href="{{ '/assets/sample-test-case/double-decker-bus.jpg' | relative_url }}" download="TransitOps-sample-bus.jpg" aria-label="Download the sample double-decker bus photo">
-        <img src="{{ '/assets/sample-test-case/double-decker-bus.jpg' | relative_url }}" width="1448" height="1086" loading="lazy" alt="SBS Transit double-decker bus service 93 on the road" />
+      <a class="sample-media" href="{{ '/assets/sample-test-case/bus-service-45.png' | relative_url }}" download="TransitOps-sample-bus-45.png" aria-label="Download the sample Service 45 double-decker bus photo">
+        <img src="{{ '/assets/sample-test-case/bus-service-45.png' | relative_url }}" width="1280" height="960" loading="lazy" alt="SBS Transit double-decker bus Service 45 near Lor Ah Soo" />
       </a>
       <div class="sample-card-body">
         <h3>1. Bus photo</h3>
-        <p>Use this image for the vehicle photograph. It shows bus service 93, plate <code>SBS7530C</code>, and a double-decker bus.</p>
+        <p>Use this image for the vehicle photograph. It shows bus Service 45, plate <code>SBS7530C</code>, and a double-decker bus.</p>
         <div class="sample-actions">
-          <a class="button button-secondary" href="{{ '/assets/sample-test-case/double-decker-bus.jpg' | relative_url }}" download="TransitOps-sample-bus.jpg">Save bus photo <span aria-hidden="true">↓</span></a>
+          <a class="button button-secondary" href="{{ '/assets/sample-test-case/bus-service-45.png' | relative_url }}" download="TransitOps-sample-bus-45.png">Save bus photo <span aria-hidden="true">↓</span></a>
         </div>
       </div>
     </article>
@@ -192,17 +192,17 @@ guide_label: Step 1 - Android app
   </div>
 
   <div class="callout sample-note" id="sample-expected-values">
-    <strong>Expected AI output and manual-entry values</strong>
-    <p>After you tap <strong>Analyze Photos and Continue</strong>, TransitOps should autofill the report with the values below. Do not type them again when the AI output already matches.</p>
+    <strong>Expected Service 45 report values</strong>
+    <p>After you tap <strong>Analyze Photos and Continue</strong>, TransitOps analyzes both photos and opens the editable form with the detected details. Passenger count remains at its preset value of <code>41</code>. Direction of travel is the one route field you must select manually.</p>
     <ul>
-      <li>Bus service: <code>93</code>; vehicle plate: <code>SBS7530C</code>; bus type: <strong>Double decker</strong></li>
-      <li>Direction of travel: <strong>Direction 1</strong> — select this manually because direction is not autofilled</li>
-      <li>Incident type: <strong>Traffic accident</strong>; severity: <strong>High</strong></li>
+      <li>Bus service: <code>45</code>; vehicle plate: <code>SBS7530C</code>; bus type: <strong>Double decker</strong></li>
+      <li>Direction of travel: <strong>Direction 1: Upper East Coast Terminal → Yio Chu Kang</strong> — select this manually because direction is not autofilled</li>
+      <li>Incident type: <strong>Traffic accident</strong>; target demo severity: <strong>High</strong></li>
       <li>Closest location: <strong>Lor Ah Soo / Upper Paya Lebar Road</strong></li>
       <li>Passenger count: <code>41</code>; rain: <strong>Not raining</strong>; wheelchair passenger onboard: <strong>No</strong></li>
-      <li>Description: <strong>Traffic accident obstructing the road near Lor Ah Soo. Diversion may be required.</strong></li>
+      <li>Target demo description: <strong>Traffic accident obstructing Service 45 at Lor Ah Soo / Upper Paya Lebar Road. Direction 1 buses towards Yio Chu Kang may require a diversion.</strong></li>
     </ul>
-    <span class="muted">Use this list to verify the AI output, or as the complete reference if you choose <strong>Enter Details Manually</strong>. Correct only values that differ. If tapping a save button opens the image instead, press and hold the image and choose <strong>Download image</strong> or <strong>Save image</strong>.</span>
+    <span class="muted">Use this list to verify and normalize the editable AI draft, or as the complete reference if you choose <strong>Enter Details Manually</strong>. Generated severity, location wording, and description can vary slightly, so correct any differences before continuing. These Service 45 values are the source of truth for this test. If tapping a save button opens the image instead, press and hold the image and choose <strong>Download image</strong> or <strong>Save image</strong>.</span>
   </div>
 </section>
 
@@ -287,8 +287,8 @@ guide_label: Step 1 - Android app
     <article class="workflow-step">
       <div class="workflow-copy">
         <span class="step-label">Step 4</span>
-        <h3>Select Direction 1 and verify the autofill</h3>
-        <p><strong>Required for this demo:</strong> set <strong>Direction of travel</strong> to <strong>Direction 1</strong>. This is the only report value that photo analysis does not autofill.</p>
+        <h3>Select the Service 45 direction and verify the autofill</h3>
+        <p><strong>Required for this demo:</strong> set <strong>Direction of travel</strong> to <strong>Direction 1: Upper East Coast Terminal → Yio Chu Kang</strong>. This direction is specific to Service 45 and is the only report value that photo analysis does not autofill.</p>
         <p>Compare the remaining AI-filled fields with the <a href="#sample-expected-values">expected output above</a>. Do not re-enter values that already match; correct only any differences. If you chose manual entry, complete the form using that same reference.</p>
       </div>
       <figure class="screenshot-slot screenshot-image">
@@ -304,7 +304,7 @@ guide_label: Step 1 - Android app
       <div class="workflow-copy">
         <span class="step-label">Step 5</span>
         <h3>Review the submission summary</h3>
-        <p>Tap <strong>Review Summary</strong>. Check the photographs, bus information, <strong>Direction 1</strong>, operating conditions, location, severity, passenger count, and incident description. Use <strong>Back to edit details</strong> if anything needs to change.</p>
+        <p>Tap <strong>Review Summary</strong>. Check the photographs, Bus Service 45 information, <strong>Direction 1 towards Yio Chu Kang</strong>, operating conditions, location, severity, passenger count, and incident description. Use <strong>Back to edit details</strong> if anything needs to change.</p>
       </div>
       <figure class="screenshot-slot screenshot-image">
         <img
