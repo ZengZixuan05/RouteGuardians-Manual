@@ -22,10 +22,6 @@ guide_label: Step 2 - Web dashboard
         <span class="tag">Route comparison</span>
         <span class="tag">Dispatch approval</span>
       </div>
-      <div class="hero-actions">
-        <a class="button" href="#officer-workflow">Start officer workflow <span aria-hidden="true">&darr;</span></a>
-        <a class="button button-secondary" href="#admin-workflow">Jump to admin workflow</a>
-      </div>
     </div>
 
     <aside class="card quickfacts" aria-label="Operations demo credentials">
