@@ -243,12 +243,12 @@ guide_label: Start here - Android app
         <h3>Sign in as the Bus Captain</h3>
         <p>Open TransitOps and enter <code>guest@guest.com</code> with password <code>guest1234</code>. Tap <strong>Sign In</strong>. The app opens the <strong>My Incidents</strong> screen.</p>
       </div>
-      <figure class="screenshot-slot">
-        <figcaption>
-          <span class="phone-mark" aria-hidden="true"></span>
-          <strong>Screenshot: Guest sign in</strong>
-          <span>Show the completed email field and the Sign In button.</span>
-        </figcaption>
+      <figure class="screenshot-slot screenshot-image">
+        <img
+          src="{{ '/assets/android/guest-login.jpg' | relative_url }}"
+          alt="TransitOps guest sign-in screen showing the demo credentials"
+          loading="lazy"
+        />
       </figure>
     </article>
 
@@ -258,12 +258,12 @@ guide_label: Start here - Android app
         <h3>Start a new incident report</h3>
         <p>On <strong>My Incidents</strong>, tap <strong>+ Add Report</strong>. On the Report Incident screen, select the incident type that best matches the disruption.</p>
       </div>
-      <figure class="screenshot-slot">
-        <figcaption>
-          <span class="phone-mark" aria-hidden="true"></span>
-          <strong>Screenshot: My Incidents</strong>
-          <span>Show the + Add Report action and an example report list.</span>
-        </figcaption>
+      <figure class="screenshot-slot screenshot-image">
+        <img
+          src="{{ '/assets/android/incident-report.jpg' | relative_url }}"
+          alt="TransitOps guest workflow step"
+          loading="lazy"
+        />
       </figure>
     </article>
 
@@ -274,12 +274,12 @@ guide_label: Start here - Android app
         <p>For AI-assisted reporting, attach one clear <strong>Bus photo</strong> and one <strong>Incident photo</strong> using Camera, Photo Library, or Files. The bus photo should show the service number, licence plate, and deck type. For the prepared demo, use the two files from the <a href="#sample-test-case">sample test case</a> above.</p>
         <p>Tap <strong>Analyze Photos and Continue</strong>. TransitOps should autofill the report details from the two images; only the direction of travel still needs to be selected. If photos or analysis are unavailable, tap <strong>Enter Details Manually</strong> instead.</p>
       </div>
-      <figure class="screenshot-slot">
-        <figcaption>
-          <span class="phone-mark" aria-hidden="true"></span>
-          <strong>Screenshot: Upload photos</strong>
-          <span>Show both photo upload areas and the manual-entry option.</span>
-        </figcaption>
+      <figure class="screenshot-slot screenshot-image">
+        <img
+          src="{{ '/assets/android/autofill-report.jpg' | relative_url }}"
+          alt="TransitOps guest submission of photos for autofill"
+          loading="lazy"
+        />
       </figure>
     </article>
 
@@ -290,12 +290,12 @@ guide_label: Start here - Android app
         <p><strong>Required for this demo:</strong> set <strong>Direction of travel</strong> to <strong>Direction 1</strong>. This is the only report value that photo analysis does not autofill.</p>
         <p>Compare the remaining AI-filled fields with the <a href="#sample-expected-values">expected output above</a>. Do not re-enter values that already match; correct only any differences. If you chose manual entry, complete the form using that same reference.</p>
       </div>
-      <figure class="screenshot-slot">
-        <figcaption>
-          <span class="phone-mark" aria-hidden="true"></span>
-          <strong>Screenshot: Edit details</strong>
-          <span>Show the autofilled bus and incident fields with Direction 1 selected.</span>
-        </figcaption>
+      <figure class="screenshot-slot screenshot-image">
+        <img
+          src="{{ '/assets/android/select-direction.jpg' | relative_url }}"
+          alt="TransitOps guest select which direction bus is going from"
+          loading="lazy"
+        />
       </figure>
     </article>
 
@@ -305,12 +305,12 @@ guide_label: Start here - Android app
         <h3>Review the submission summary</h3>
         <p>Tap <strong>Review Summary</strong>. Check the photographs, bus information, <strong>Direction 1</strong>, operating conditions, location, severity, passenger count, and incident description. Use <strong>Back to edit details</strong> if anything needs to change.</p>
       </div>
-      <figure class="screenshot-slot">
-        <figcaption>
-          <span class="phone-mark" aria-hidden="true"></span>
-          <strong>Screenshot: Review Summary</strong>
-          <span>Show the summary with the two report photographs.</span>
-        </figcaption>
+      <figure class="screenshot-slot screenshot-image">
+        <img
+          src="{{ '/assets/android/review-summary.jpg' | relative_url }}"
+          alt="TransitOps guest review summary"
+          loading="lazy"
+        />
       </figure>
     </article>
 
@@ -320,12 +320,12 @@ guide_label: Start here - Android app
         <h3>Submit the incident</h3>
         <p>When every detail is correct, tap <strong>Submit Incident</strong>. Wait for the app to return to <strong>My Incidents</strong> and confirm that the new report appears in the list.</p>
       </div>
-      <figure class="screenshot-slot">
-        <figcaption>
-          <span class="phone-mark" aria-hidden="true"></span>
-          <strong>Screenshot: Submitted report</strong>
-          <span>Show the new report and its current status in My Incidents.</span>
-        </figcaption>
+      <figure class="screenshot-slot screenshot-image">
+        <img
+          src="{{ '/assets/android/submit-incident.jpg' | relative_url }}"
+          alt="Transitops guest submit incidents page"
+          loading="lazy"
+        />
       </figure>
     </article>
 
@@ -335,12 +335,12 @@ guide_label: Start here - Android app
         <h3>Track the command-centre response</h3>
         <p>After submitting, continue with the <a class="text-link" href="{{ '/web-dashboard/' | relative_url }}">Operations Officer dashboard workflow</a> so the incident can be reviewed and dispatched. Then return to the report to see its status, submitted photographs, and officer-message history. Pull to refresh or tap <strong>Check Now</strong> to request the latest decision and route information.</p>
       </div>
-      <figure class="screenshot-slot">
-        <figcaption>
-          <span class="phone-mark" aria-hidden="true"></span>
-          <strong>Screenshot: Incident Details</strong>
-          <span>Show status, officer messages, and the Check Now action.</span>
-        </figcaption>
+      <figure class="screenshot-slot screenshot-image">
+        <img
+          src="{{ '/assets/android/track-response.jpg' | relative_url }}"
+          alt="TransitOps guest track status of response"
+          loading="lazy"
+        />
       </figure>
     </article>
 
@@ -351,12 +351,12 @@ guide_label: Start here - Android app
         <p>After the operations officer approves a diversion, tap <strong>Go to Route</strong>. Use <strong>Overview</strong> to frame the complete route, or <strong>Follow Me</strong> when device location is available.</p>
         <p>If the route is rejected, the report returns to a reviewing state and <strong>Go to Route</strong> is no longer shown.</p>
       </div>
-      <figure class="screenshot-slot">
-        <figcaption>
-          <span class="phone-mark" aria-hidden="true"></span>
-          <strong>Screenshot: Approved route</strong>
-          <span>Show Go to Route, the diversion map, or the guidance controls.</span>
-        </figcaption>
+      <figure class="screenshot-slot screenshot-image">
+        <img
+          src="{{ '/assets/android/open-approvedroute.jpg' | relative_url }}"
+          alt="TransitOps guest open already approved route"
+          loading="lazy"
+        />
       </figure>
     </article>
   </div>
