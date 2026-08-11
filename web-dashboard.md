@@ -100,7 +100,7 @@ guide_label: Step 2 - Operations Officer
   </div>
   <div class="callout">
     <strong>Current demo record</strong>
-    <span class="muted">Use the SVC 45 accident submitted from the chosen Bus Captain app. Its Direction 1 route runs from Upper East Coast Terminal towards Yio Chu Kang. The screenshots show where controls appear; if an older captured value differs, follow the written Service 45 instructions.</span>
+    <span class="muted">Use the SVC 45 accident submitted from the chosen Bus Captain app. Its Direction 1 route runs from Upper East Coast Terminal towards Yio Chu Kang.</span>
   </div>
 </section>
 
@@ -134,7 +134,6 @@ guide_label: Step 2 - Operations Officer
       </div>
       <figure class="screenshot-slot screenshot-image">
         <img src="{{ '/assets/ss2.png' | relative_url }}" alt="Operations Officer dashboard showing the submitted incident selected from the feed" loading="lazy" />
-        <figcaption class="screenshot-data-note"><strong>Legacy feed reference:</strong> select the newly submitted SVC 45 report, not an older example row visible here.</figcaption>
       </figure>
     </article>
 
@@ -145,7 +144,6 @@ guide_label: Step 2 - Operations Officer
         <p>Click <strong>Review</strong> to examine the incident details. Confirm Service <strong>45</strong>, vehicle <code>SBS7530C</code>, <strong>Direction 1 towards Yio Chu Kang</strong>, and the Lor Ah Soo / Upper Paya Lebar Road location. Review the photos and confirm that they match the reported situation.</p>
       </div>
       <figure class="screenshot-slot screenshot-image screenshot-stack">
-        <figcaption class="screenshot-data-note"><strong>Legacy UI reference:</strong> ignore the embedded example values in both images; verify Service 45, SBS7530C, and Direction 1 towards Yio Chu Kang.</figcaption>
         <img src="{{ '/assets/ss3.png' | relative_url }}" alt="Operations Officer review screen showing incident details and route information" loading="lazy" />
         <img src="{{ '/assets/ss4.png' | relative_url }}" alt="Operations Officer review screen showing the second supporting screenshot for the incident review" loading="lazy" />
       </figure>
@@ -159,7 +157,6 @@ guide_label: Step 2 - Operations Officer
       </div>
       <figure class="screenshot-slot screenshot-image">
         <img src="{{ '/assets/webapp/ss5.png' | relative_url }}" alt="Operations Officer decision settings screen for the incident workflow" loading="lazy" />
-        <figcaption class="screenshot-data-note"><strong>Legacy UI reference:</strong> notify the following Service 45 Bus Captain for this test.</figcaption>
       </figure>
     </article>
 
@@ -171,7 +168,6 @@ guide_label: Step 2 - Operations Officer
       </div>
       <figure class="screenshot-slot screenshot-image">
         <img src="{{ '/assets/webapp/ss7.png' | relative_url }}" alt="Operations Officer AI route comparison screen for the diversion workflow" loading="lazy" />
-        <figcaption class="screenshot-data-note"><strong>Legacy UI reference:</strong> assess the newly generated Service 45 Direction 1 diversion.</figcaption>
       </figure>
     </article>
 
@@ -183,7 +179,6 @@ guide_label: Step 2 - Operations Officer
       </div>
       <figure class="screenshot-slot screenshot-image">
         <img src="{{ '/assets/webapp/ss8.png' | relative_url }}" alt="Operations Officer directions screen showing the approved diversion route review" loading="lazy" />
-        <figcaption class="screenshot-data-note"><strong>Legacy UI reference:</strong> confirm the current Service 45 route towards Yio Chu Kang.</figcaption>
       </figure>
     </article>
 
@@ -206,7 +201,6 @@ guide_label: Step 2 - Operations Officer
       </div>
       <figure class="screenshot-slot screenshot-image">
         <img src="{{ '/assets/webapp/ss10.png' | relative_url }}" alt="Operations Officer approve and dispatch screen for the diversion workflow" loading="lazy" />
-        <figcaption class="screenshot-data-note"><strong>Legacy UI reference:</strong> the live approval summary should show Service 45 and SBS7530C.</figcaption>
       </figure>
     </article>
   </div>

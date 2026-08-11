@@ -202,7 +202,7 @@ guide_label: Step 1 - Android app
       <li>Passenger count: <code>41</code>; rain: <strong>Not raining</strong>; wheelchair passenger onboard: <strong>No</strong></li>
       <li>Target demo description: <strong>Traffic accident obstructing Service 45 at Lor Ah Soo / Upper Paya Lebar Road. Direction 1 buses towards Yio Chu Kang may require a diversion.</strong></li>
     </ul>
-    <span class="muted">Use this list to verify and normalize the editable AI draft, or as the complete reference if you choose <strong>Enter Details Manually</strong>. Generated severity, location wording, and description can vary slightly, so correct any differences before continuing. These Service 45 values are the source of truth for this test; do not reuse values from an earlier screenshot. If tapping a save button opens the image instead, press and hold the image and choose <strong>Download image</strong> or <strong>Save image</strong>.</span>
+    <span class="muted">Use this list to verify and normalize the editable AI draft, or as the complete reference if you choose <strong>Enter Details Manually</strong>. Generated severity, location wording, and description can vary slightly, so correct any differences before continuing. These Service 45 values are the source of truth for this test. If tapping a save button opens the image instead, press and hold the image and choose <strong>Download image</strong> or <strong>Save image</strong>.</span>
   </div>
 </section>
 
@@ -281,7 +281,6 @@ guide_label: Step 1 - Android app
           alt="TransitOps guest submission of photos for autofill"
           loading="lazy"
         />
-        <figcaption class="screenshot-data-note"><strong>Legacy UI reference:</strong> use the current Service 45 image and written values above.</figcaption>
       </figure>
     </article>
 
@@ -298,7 +297,6 @@ guide_label: Step 1 - Android app
           alt="TransitOps guest select which direction bus is going from"
           loading="lazy"
         />
-        <figcaption class="screenshot-data-note"><strong>Legacy UI reference:</strong> select Service 45 Direction 1 towards Yio Chu Kang, regardless of the earlier value shown.</figcaption>
       </figure>
     </article>
 
@@ -314,7 +312,6 @@ guide_label: Step 1 - Android app
           alt="TransitOps guest review summary"
           loading="lazy"
         />
-        <figcaption class="screenshot-data-note"><strong>Legacy UI reference:</strong> verify the current Service 45 values instead of the seeded data visible here.</figcaption>
       </figure>
     </article>
 
@@ -330,7 +327,6 @@ guide_label: Step 1 - Android app
           alt="Transitops guest submit incidents page"
           loading="lazy"
         />
-        <figcaption class="screenshot-data-note"><strong>Legacy UI reference:</strong> confirm that your newly submitted list entry is Service 45.</figcaption>
       </figure>
     </article>
 
@@ -355,7 +351,6 @@ guide_label: Step 1 - Android app
           alt="TransitOps guest track status of response"
           loading="lazy"
         />
-        <figcaption class="screenshot-data-note"><strong>Legacy UI reference:</strong> open the Service 45 report created during this judging run.</figcaption>
       </figure>
     </article>
 
@@ -372,7 +367,6 @@ guide_label: Step 1 - Android app
           alt="TransitOps guest open already approved route"
           loading="lazy"
         />
-        <figcaption class="screenshot-data-note"><strong>Legacy route reference:</strong> open the approved route for the Service 45 report created during this judging run.</figcaption>
       </figure>
     </article>
   </div>

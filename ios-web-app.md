@@ -214,7 +214,6 @@ guide_label: Step 1 - iOS web app
       </div>
       <figure class="screenshot-slot screenshot-image">
         <img src="{{ '/assets/ios/captain/Step 2.png' | relative_url }}" alt="TransitOps iOS web app Step 2 showing the My Incidents list" loading="lazy" />
-        <figcaption class="screenshot-data-note"><strong>Legacy UI reference:</strong> start a new report and later select the Service 45 incident created during this judging run.</figcaption>
       </figure>
     </article>
 
@@ -228,7 +227,6 @@ guide_label: Step 1 - iOS web app
       </div>
       <figure class="screenshot-slot screenshot-image">
         <img src="{{ '/assets/ios/captain/Step 3.png' | relative_url }}" alt="TransitOps iOS web app Step 3 showing incident creation with photo upload and analysis" loading="lazy" />
-        <figcaption class="screenshot-data-note"><strong>Legacy UI reference:</strong> use the current Service 45 bus and traffic-accident images provided above.</figcaption>
       </figure>
     </article>
 
@@ -241,7 +239,6 @@ guide_label: Step 1 - iOS web app
       </div>
       <figure class="screenshot-slot screenshot-image">
         <img src="{{ '/assets/ios/captain/Step 4.png' | relative_url }}" alt="TransitOps iOS web app Step 4 showing report details and edits" loading="lazy" />
-        <figcaption class="screenshot-data-note"><strong>Legacy UI reference:</strong> use Service 45, SBS7530C, and Direction 1 towards Yio Chu Kang instead of the embedded example values.</figcaption>
       </figure>
     </article>
 
@@ -253,7 +250,6 @@ guide_label: Step 1 - iOS web app
       </div>
       <figure class="screenshot-slot screenshot-image">
         <img src="{{ '/assets/ios/captain/Step 5.png' | relative_url }}" alt="TransitOps iOS web app Step 5 showing the review and submit summary" loading="lazy" />
-        <figcaption class="screenshot-data-note"><strong>Legacy UI reference:</strong> verify the current Service 45 values before submitting.</figcaption>
       </figure>
     </article>
 
@@ -265,7 +261,6 @@ guide_label: Step 1 - iOS web app
       </div>
       <figure class="screenshot-slot screenshot-image">
         <img src="{{ '/assets/ios/captain/Step 6.png' | relative_url }}" alt="TransitOps iOS web app Step 6 showing incident tracking and officer updates" loading="lazy" />
-        <figcaption class="screenshot-data-note"><strong>Legacy UI reference:</strong> open the Service 45 report created during this judging run.</figcaption>
       </figure>
     </article>
 
@@ -286,7 +281,6 @@ guide_label: Step 1 - iOS web app
       </div>
       <figure class="screenshot-slot screenshot-image">
         <img src="{{ '/assets/ios/captain/Step 7.png' | relative_url }}" alt="TransitOps iOS web app Step 7 showing the approved diversion route" loading="lazy" />
-        <figcaption class="screenshot-data-note"><strong>Legacy route reference:</strong> open the approved diversion for the current Service 45 report.</figcaption>
       </figure>
     </article>
 
@@ -298,7 +292,6 @@ guide_label: Step 1 - iOS web app
       </div>
       <figure class="screenshot-slot screenshot-image screenshot-stack">
         <img src="{{ '/assets/ios/captain/Step 8.png' | relative_url }}" alt="TransitOps iOS web app Step 8 showing resolved report history" loading="lazy" />
-        <figcaption class="screenshot-data-note"><strong>Legacy route reference:</strong> resolve and review the route history for the current Service 45 report.</figcaption>
       </figure>
     </article>
   </div>
