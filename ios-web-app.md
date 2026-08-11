@@ -207,13 +207,13 @@ guide_label: Step 3 - iOS web app
       </figure>
     </article>
 
-    <article class="workflow-step workflow-step-stack">
+    <article class="workflow-step">
       <div class="workflow-copy">
         <span class="step-label">Step 6</span>
         <h3>Track officer updates</h3>
         <p>Open the submitted report to view its status, photos, officer messages, and approved diversion action. Pending reports can be edited or deleted; reports under review can be checked manually with <strong>Check Now</strong> while the page also polls for updates.</p>
       </div>
-      <figure class="screenshot-slot screenshot-image screenshot-stack">
+      <figure class="screenshot-slot screenshot-image">
         <img src="{{ '/assets/ios/captain/Step 6.png' | relative_url }}" alt="TransitOps iOS web app Step 6 showing incident tracking and officer updates" loading="lazy" />
       </figure>
     </article>
