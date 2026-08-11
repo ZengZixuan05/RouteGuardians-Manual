@@ -14,7 +14,7 @@ guide_label: Step 2 - Operations Officer
       <h1>TransitOps Operations Officer Guide</h1>
       <p class="lead">
         Continue here after a Bus Captain has submitted an incident through a Step 1 mobile app.
-        The prepared Service 45 test case on this page comes from the Android workflow.
+        The prepared Service 45 test case can come from either the Android or iOS workflow.
         Follow the Operations Officer workflow to review the report, compare diversion options,
         approve the route, and dispatch notifications. Use the Admin workflow separately to manage dashboard users.
       </p>
@@ -71,11 +71,11 @@ guide_label: Step 2 - Operations Officer
 
 <section class="section" aria-labelledby="prerequisite-title">
   <span class="workflow-kicker">Before you begin</span>
-  <h2 id="prerequisite-title">Create the Service 45 incident in Android first</h2>
-  <p>The dashboard is the second part of the Android demonstration. Sign in as Guest / Bus Captain in the Android app, submit the prepared SVC 45 Direction 1 incident, and then locate that report in the active incident feed.</p>
+  <h2 id="prerequisite-title">Create the Service 45 incident in either Bus Captain app first</h2>
+  <p>The dashboard is the second part of the demonstration. Sign in as Guest / Bus Captain in Android or the iOS web app, submit the prepared SVC 45 Direction 1 incident, and then locate that report in the active incident feed.</p>
   <div class="callout">
     <strong>Need to create the report?</strong>
-    <span class="muted"><a class="text-link" href="{{ '/android-app/' | relative_url }}#guest-workflow">Open the Android Bus Captain workflow</a>, submit the prepared Service 45 report, and then return to this page. Use the iOS guide separately for the alternate browser-based demonstration.</span>
+    <span class="muted"><a class="text-link" href="{{ '/android-app/' | relative_url }}#sample-test-case">Open the Android test case</a> or <a class="text-link" href="{{ '/ios-web-app/' | relative_url }}#ios-sample-test-case">open the iOS test case</a>, submit the prepared Service 45 report, and then return to this page.</span>
   </div>
 </section>
 
@@ -100,7 +100,7 @@ guide_label: Step 2 - Operations Officer
   </div>
   <div class="callout">
     <strong>Current demo record</strong>
-    <span class="muted">Use the SVC 45 accident submitted from the Android app. Its Direction 1 route runs from Upper East Coast Terminal towards Yio Chu Kang. The screenshots show where controls appear; if an older captured value differs, follow the written Service 45 instructions.</span>
+    <span class="muted">Use the SVC 45 accident submitted from the chosen Bus Captain app. Its Direction 1 route runs from Upper East Coast Terminal towards Yio Chu Kang. The screenshots show where controls appear; if an older captured value differs, follow the written Service 45 instructions.</span>
   </div>
 </section>
 
@@ -130,7 +130,7 @@ guide_label: Step 2 - Operations Officer
       <div class="workflow-copy">
         <span class="step-label">Step 2</span>
         <h3>Select the submitted incident</h3>
-        <p>Select an incident from the list at the bottom-left of the dashboard. For this demonstration, choose the SVC 45 incident at Lor Ah Soo / Upper Paya Lebar Road that was submitted through the Android app.</p>
+        <p>Select an incident from the list at the bottom-left of the dashboard. For this demonstration, choose the SVC 45 incident at Lor Ah Soo / Upper Paya Lebar Road that was submitted through the chosen Bus Captain app.</p>
       </div>
       <figure class="screenshot-slot screenshot-image">
         <img src="{{ '/assets/ss2.png' | relative_url }}" alt="Operations Officer dashboard showing the submitted incident selected from the feed" loading="lazy" />

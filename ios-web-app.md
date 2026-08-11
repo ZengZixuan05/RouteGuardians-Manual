@@ -1,6 +1,6 @@
 ---
 title: iOS Web App Guide
-description: TransitOps iOS-style web app workflow, installation notes, and captain/admin navigation
+description: TransitOps iOS-style web app Service 45 test workflow, downloadable sample images, and captain/admin navigation
 layout: default
 permalink: /ios-web-app/
 header_subtitle: TransitOps iOS Web App Walkthrough
@@ -16,7 +16,8 @@ guide_label: Step 1 - iOS web app
         TransitOps Web is the iPhone-friendly Step 1 version of the Bus Captain iOS experience.
         Publishing a native iOS build through TestFlight or the App Store requires paid
         Apple Developer Program access, so this project provides a browser-based version
-        that judges can open immediately on iPhone, iPad, desktop, or Android.
+        that judges can open immediately on iPhone, iPad, desktop, or Android. It uses the
+        same prepared Service 45 test case as the Android guide.
       </p>
       <p class="dashboard-access">
         <strong>Live web app:</strong>
@@ -29,8 +30,8 @@ guide_label: Step 1 - iOS web app
       </p>
       <div class="tag-row" style="margin-top: 22px;">
         <span class="tag">iOS-style workflow</span>
+        <span class="tag">Service 45 test case</span>
         <span class="tag">Same Supabase backend</span>
-        <span class="tag">Add to Home Screen</span>
       </div>
     </div>
 
@@ -110,6 +111,58 @@ guide_label: Step 1 - iOS web app
   </ol>
 </section>
 
+<section class="section" id="ios-sample-test-case" aria-labelledby="ios-sample-title">
+  <div class="section-heading">
+    <div>
+      <span class="workflow-kicker">Sample test case</span>
+      <h2 id="ios-sample-title">Save these two Service 45 report images</h2>
+      <p>Download both images before testing. Use the bus image as the <strong>Bus photo</strong> and the accident image as the <strong>Incident photo</strong> in TransitOps Web.</p>
+    </div>
+  </div>
+
+  <div class="sample-grid">
+    <article class="sample-card">
+      <a class="sample-media" href="{{ '/assets/sample-test-case/bus-service-45.png' | relative_url }}" download="TransitOps-sample-bus-45.png" aria-label="Download the sample Service 45 double-decker bus photo">
+        <img src="{{ '/assets/sample-test-case/bus-service-45.png' | relative_url }}" width="1280" height="960" loading="lazy" alt="SBS Transit double-decker bus Service 45 near Lor Ah Soo" />
+      </a>
+      <div class="sample-card-body">
+        <h3>1. Bus photo</h3>
+        <p>Use this image for the vehicle photograph. It shows bus Service 45, plate <code>SBS7530C</code>, and a double-decker bus.</p>
+        <div class="sample-actions">
+          <a class="button button-secondary" href="{{ '/assets/sample-test-case/bus-service-45.png' | relative_url }}" download="TransitOps-sample-bus-45.png">Save bus photo <span aria-hidden="true">&darr;</span></a>
+        </div>
+      </div>
+    </article>
+
+    <article class="sample-card">
+      <a class="sample-media" href="{{ '/assets/sample-test-case/car-accident.jpg' | relative_url }}" download="TransitOps-sample-incident.jpg" aria-label="Download the sample traffic accident photo">
+        <img src="{{ '/assets/sample-test-case/car-accident.jpg' | relative_url }}" width="596" height="335" loading="lazy" alt="Traffic accident obstructing the road near Lor Ah Soo" />
+      </a>
+      <div class="sample-card-body">
+        <h3>2. Incident photo</h3>
+        <p>Use this image for the incident evidence. It shows a traffic accident and road obstruction near Lor Ah Soo.</p>
+        <div class="sample-actions">
+          <a class="button button-secondary" href="{{ '/assets/sample-test-case/car-accident.jpg' | relative_url }}" download="TransitOps-sample-incident.jpg">Save incident photo <span aria-hidden="true">&darr;</span></a>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <div class="callout sample-note" id="ios-sample-expected-values">
+    <strong>Expected Service 45 report values</strong>
+    <p>Choose <strong>Traffic Accident</strong>, attach both images, and tap <strong>Analyze Photos and Continue</strong>. TransitOps analyzes the photos and opens an editable draft. Passenger count starts at <code>41</code>; direction of travel is the one route field you must select manually.</p>
+    <ul>
+      <li>Bus service: <code>45</code>; vehicle plate: <code>SBS7530C</code>; bus type: <strong>Double decker</strong></li>
+      <li>Direction of travel: <strong>Direction 1: Upp East Coast Ter &rarr; Yio Chu Kang Int</strong> — Upper East Coast Terminal to Yio Chu Kang Interchange; select this manually</li>
+      <li>Incident type: <strong>Traffic Accident</strong>; target demo severity: <strong>High</strong></li>
+      <li>Closest location: <strong>Lor Ah Soo / Upper Paya Lebar Road</strong></li>
+      <li>Passenger count: <code>41</code>; rain: <strong>Not raining</strong>; wheelchair passenger onboard: <strong>No</strong></li>
+      <li>Target demo description: <strong>Traffic accident obstructing Service 45 at Lor Ah Soo / Upper Paya Lebar Road. Direction 1 buses towards Yio Chu Kang may require a diversion.</strong></li>
+    </ul>
+    <span class="muted">Verify and correct the editable draft before continuing because generated severity, location wording, and description can vary slightly. If Safari opens an image instead of saving it, press and hold the image and choose <strong>Save to Photos</strong> or <strong>Save Image</strong>. You can then attach it from Photo Library; files saved to Files can be selected with the JPG/PNG file option.</span>
+  </div>
+</section>
+
 <section class="section" aria-labelledby="choose-workflow">
   <h2 id="choose-workflow">iOS web app roles</h2>
   <p>Use Bus Captain to create and track incident reports. Use Administrator only to configure Bus Captain access.</p>
@@ -129,10 +182,6 @@ guide_label: Step 1 - iOS web app
       <b aria-hidden="true">&rarr;</b>
     </a>
   </div>
-  <div class="callout">
-    <strong>Screenshot note</strong>
-    <span class="muted">The steps below match the manual-tab style and leave space for the screenshots you plan to add afterwards.</span>
-  </div>
 </section>
 
 <section class="section" id="captain-workflow" aria-labelledby="captain-title">
@@ -143,11 +192,6 @@ guide_label: Step 1 - iOS web app
       <p>Use the captain account to create a report, verify AI-assisted details, monitor officer messages, and open the approved diversion route.</p>
     </div>
     <a class="workflow-jump" href="#admin-workflow">Go to admin workflow &darr;</a>
-  </div>
-
-  <div class="callout" style="margin: 0 0 18px;">
-    <strong>Separate iOS example data</strong>
-    <span class="muted">The screenshots in this walkthrough show earlier iOS test records and are not the prepared Service 45 judging case. Use the Android guide for the Service 45 end-to-end test. If you demonstrate iOS separately, follow the controls shown here and select the report created during that iOS session.</span>
   </div>
 
   <div class="workflow-list">
@@ -170,29 +214,34 @@ guide_label: Step 1 - iOS web app
       </div>
       <figure class="screenshot-slot screenshot-image">
         <img src="{{ '/assets/ios/captain/Step 2.png' | relative_url }}" alt="TransitOps iOS web app Step 2 showing the My Incidents list" loading="lazy" />
+        <figcaption class="screenshot-data-note"><strong>Legacy UI reference:</strong> start a new report and later select the Service 45 incident created during this judging run.</figcaption>
       </figure>
     </article>
 
     <article class="workflow-step">
       <div class="workflow-copy">
         <span class="step-label">Step 3</span>
-        <h3>Create the incident report</h3>
-        <p>Choose the incident type, attach one Bus photo and one Incident photo, then tap <strong>Analyze Photos and Continue</strong>. The browser version supports live camera capture, photo-library selection, JPG/PNG file upload, and full-screen previews.</p>
+        <h3>Add the Service 45 sample photos</h3>
+        <p>Choose <strong>Traffic Accident</strong>. Attach the two files from the <a href="#ios-sample-test-case">sample test case above</a>: use the Service 45 image as the <strong>Bus photo</strong> and the accident image as the <strong>Incident photo</strong>. Select them from Photo Library or Files, then tap <strong>Analyze Photos and Continue</strong>.</p>
+        <p>TransitOps should fill the detectable bus and incident details; direction of travel still needs to be selected manually. The browser version also supports live camera capture, JPG/PNG file upload, and full-screen previews.</p>
         <p>If photos cannot be used, choose <strong>Enter Details Manually</strong> to create the same operational report without photo upload or AI analysis.</p>
       </div>
       <figure class="screenshot-slot screenshot-image">
         <img src="{{ '/assets/ios/captain/Step 3.png' | relative_url }}" alt="TransitOps iOS web app Step 3 showing incident creation with photo upload and analysis" loading="lazy" />
+        <figcaption class="screenshot-data-note"><strong>Legacy UI reference:</strong> use the current Service 45 bus and traffic-accident images provided above.</figcaption>
       </figure>
     </article>
 
     <article class="workflow-step">
       <div class="workflow-copy">
         <span class="step-label">Step 4</span>
-        <h3>Check and edit the report details</h3>
-        <p>Verify the service number, direction of travel, vehicle plate, rain condition, bus deck type, closest stop or location, severity, passenger count, and description. The web app also supports current location, Singapore place search, LTA bus-stop search, optional obstruction-area drawing, and browser speech-to-text dictation.</p>
+        <h3>Select Direction 1 and verify the Service 45 draft</h3>
+        <p><strong>Required for this demo:</strong> set <strong>Direction of travel</strong> to <strong>Direction 1: Upp East Coast Ter &rarr; Yio Chu Kang Int</strong> (Upper East Coast Terminal to Yio Chu Kang Interchange). Compare every other field with the <a href="#ios-sample-expected-values">expected values above</a> and correct only any differences.</p>
+        <p>If the location was not resolved automatically, search for and select <strong>Lor Ah Soo / Upper Paya Lebar Road</strong>. The web app also supports current location, LTA bus-stop search, optional obstruction-area drawing, and browser speech-to-text dictation.</p>
       </div>
       <figure class="screenshot-slot screenshot-image">
         <img src="{{ '/assets/ios/captain/Step 4.png' | relative_url }}" alt="TransitOps iOS web app Step 4 showing report details and edits" loading="lazy" />
+        <figcaption class="screenshot-data-note"><strong>Legacy UI reference:</strong> use Service 45, SBS7530C, and Direction 1 towards Yio Chu Kang instead of the embedded example values.</figcaption>
       </figure>
     </article>
 
@@ -200,10 +249,11 @@ guide_label: Step 1 - iOS web app
       <div class="workflow-copy">
         <span class="step-label">Step 5</span>
         <h3>Review and submit</h3>
-        <p>Open <strong>Review Summary</strong>, check every item and attached photo, then submit once. TransitOps uploads photos to the existing <code>incident-photos</code> bucket, creates the report with <strong>Pending</strong> status, and returns to <strong>My Incidents</strong>.</p>
+        <p>Open <strong>Review Summary</strong> and confirm the two photographs, Service 45, <code>SBS7530C</code>, Direction 1 towards Yio Chu Kang, and all remaining expected values. Submit once. TransitOps uploads the photos, creates the report with <strong>Pending</strong> status, and returns to <strong>My Incidents</strong>.</p>
       </div>
       <figure class="screenshot-slot screenshot-image">
         <img src="{{ '/assets/ios/captain/Step 5.png' | relative_url }}" alt="TransitOps iOS web app Step 5 showing the review and submit summary" loading="lazy" />
+        <figcaption class="screenshot-data-note"><strong>Legacy UI reference:</strong> verify the current Service 45 values before submitting.</figcaption>
       </figure>
     </article>
 
@@ -211,10 +261,11 @@ guide_label: Step 1 - iOS web app
       <div class="workflow-copy">
         <span class="step-label">Step 6</span>
         <h3>Track officer updates</h3>
-        <p>Open the submitted report to view its status, photos, and officer messages. Pending reports can be edited or deleted; reports under review can be checked manually with <strong>Check Now</strong> while the page also polls for updates.</p>
+        <p>Open the newly submitted Service 45 report to view its status, photos, and officer messages. Pending reports can be edited or deleted; reports under review can be checked manually with <strong>Check Now</strong> while the page also polls for updates.</p>
       </div>
       <figure class="screenshot-slot screenshot-image">
         <img src="{{ '/assets/ios/captain/Step 6.png' | relative_url }}" alt="TransitOps iOS web app Step 6 showing incident tracking and officer updates" loading="lazy" />
+        <figcaption class="screenshot-data-note"><strong>Legacy UI reference:</strong> open the Service 45 report created during this judging run.</figcaption>
       </figure>
     </article>
 
@@ -231,10 +282,11 @@ guide_label: Step 1 - iOS web app
       <div class="workflow-copy">
         <span class="step-label">Step 7</span>
         <h3>Open the approved diversion</h3>
-        <p>After completing the required Operations Officer checkpoint above, return to the submitted report. When the report becomes <strong>Route Ready</strong>, tap <strong>Go to Route</strong>. Review the diversion summary, start live guidance, and use Overview, Follow Me, Previous Step, and Next Step controls as needed.</p>
+        <p>After completing the required Operations Officer checkpoint above, return to the submitted Service 45 report. When the report becomes <strong>Route Ready</strong>, tap <strong>Go to Route</strong>. Review the diversion summary, start live guidance, and use Overview, Follow Me, Previous Step, and Next Step controls as needed.</p>
       </div>
       <figure class="screenshot-slot screenshot-image">
         <img src="{{ '/assets/ios/captain/Step 7.png' | relative_url }}" alt="TransitOps iOS web app Step 7 showing the approved diversion route" loading="lazy" />
+        <figcaption class="screenshot-data-note"><strong>Legacy route reference:</strong> open the approved diversion for the current Service 45 report.</figcaption>
       </figure>
     </article>
 
@@ -246,6 +298,7 @@ guide_label: Step 1 - iOS web app
       </div>
       <figure class="screenshot-slot screenshot-image screenshot-stack">
         <img src="{{ '/assets/ios/captain/Step 8.png' | relative_url }}" alt="TransitOps iOS web app Step 8 showing resolved report history" loading="lazy" />
+        <figcaption class="screenshot-data-note"><strong>Legacy route reference:</strong> resolve and review the route history for the current Service 45 report.</figcaption>
       </figure>
     </article>
   </div>

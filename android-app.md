@@ -14,7 +14,7 @@ guide_label: Step 1 - Android app
       <h1>TransitOps Android App Guide</h1>
       <p class="lead">
         Use this Bus Captain workflow for the prepared Service 45 test case. The iOS web app
-        remains an alternate Step 1 workflow with its own walkthrough. The captain must submit
+        offers the same test images and expected values in its own walkthrough. The captain must submit
         an incident before the Operations Officer can review and route it on the web dashboard.
         Use the Administrator workflow separately to manage Bus Captain accounts.
       </p>
@@ -59,7 +59,7 @@ guide_label: Step 1 - Android app
 <section class="section" aria-labelledby="journey-title">
   <span class="workflow-kicker">Recommended test order</span>
   <h2 id="journey-title">One Service 45 incident across Android and dashboard</h2>
-  <p>Submit the prepared Service 45 report from Android, then complete Step 2 in the Operations Officer dashboard. The iOS web app is a separate alternate demonstration.</p>
+  <p>Submit the prepared Service 45 report from Android, then complete Step 2 in the Operations Officer dashboard. Judges using iOS can follow the same test case from the iOS guide.</p>
   <ol class="journey-list">
     <li class="journey-step">
       <span class="journey-number" aria-hidden="true">1</span>
