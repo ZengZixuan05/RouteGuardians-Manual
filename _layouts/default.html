@@ -89,16 +89,14 @@
         font-size: 0.95rem;
       }
 
-      .pill {
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        border-radius: 999px;
-        padding: 10px 14px;
-        background: rgba(15, 118, 110, 0.1);
-        color: var(--accent);
-        font-size: 0.92rem;
-        font-weight: 600;
+      .guide-context {
+        padding-left: 14px;
+        border-left: 1px solid var(--panel-border);
+        color: var(--muted);
+        font-size: 0.82rem;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        line-height: 1.4;
         white-space: nowrap;
       }
 
@@ -350,6 +348,9 @@
       .timeline {
         display: grid;
         gap: 14px;
+        margin-bottom: 0;
+        padding-left: 0 !important;
+        list-style: none;
         counter-reset: step;
       }
 
@@ -378,7 +379,7 @@
         font-weight: 700;
       }
 
-      .step strong {
+      .step > strong {
         display: block;
         font-size: 1.03rem;
         margin-bottom: 6px;
@@ -423,7 +424,7 @@
         border-radius: 18px;
       }
 
-      .callout strong {
+      .callout > strong {
         display: block;
         margin-bottom: 6px;
       }
@@ -436,8 +437,9 @@
       .role-links {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 14px;
+        gap: 28px;
         margin-top: 18px;
+        border-top: 1px solid var(--panel-border);
       }
 
       .role-link {
@@ -445,18 +447,20 @@
         align-items: center;
         justify-content: space-between;
         gap: 16px;
-        min-height: 92px;
-        padding: 18px 20px;
-        border: 1px solid rgba(15, 118, 110, 0.14);
-        border-radius: 20px;
-        background: linear-gradient(145deg, rgba(15, 118, 110, 0.08), rgba(255, 255, 255, 0.75));
+        padding: 18px 2px;
+        border-bottom: 1px solid var(--panel-border);
         text-decoration: none;
-        transition: border-color 160ms ease, transform 160ms ease;
+        transition: color 160ms ease;
       }
 
       .role-link:hover {
-        border-color: rgba(15, 118, 110, 0.34);
-        transform: translateY(-2px);
+        color: var(--accent);
+      }
+
+      .role-link:hover .role-link-copy strong {
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 4px;
       }
 
       .role-link-copy,
@@ -473,7 +477,68 @@
 
       .role-link b {
         color: var(--accent);
-        font-size: 1.35rem;
+        font-size: 1.05rem;
+      }
+
+      .workflow-jump,
+      .text-link {
+        color: var(--accent);
+        font-weight: 700;
+        text-decoration: underline;
+        text-decoration-color: rgba(15, 118, 110, 0.35);
+        text-decoration-thickness: 1px;
+        text-underline-offset: 4px;
+      }
+
+      .workflow-jump {
+        flex: 0 0 auto;
+        margin-bottom: 7px;
+        white-space: nowrap;
+      }
+
+      .workflow-jump:hover,
+      .text-link:hover {
+        text-decoration-color: currentColor;
+      }
+
+      .journey-list {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 24px;
+        margin: 22px 0 0;
+        padding: 0 !important;
+        list-style: none;
+      }
+
+      .journey-step {
+        display: grid;
+        grid-template-columns: 34px minmax(0, 1fr);
+        gap: 12px;
+        padding-top: 16px;
+        border-top: 2px solid rgba(15, 118, 110, 0.24);
+      }
+
+      .journey-step strong {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      .journey-step p {
+        margin: 0;
+        font-size: 0.95rem;
+        line-height: 1.6;
+      }
+
+      .journey-number {
+        display: grid;
+        width: 30px;
+        height: 30px;
+        place-items: center;
+        border-radius: 50%;
+        background: rgba(15, 118, 110, 0.1);
+        color: var(--accent);
+        font-size: 0.85rem;
+        font-weight: 800;
       }
 
       .section-heading {
@@ -575,13 +640,6 @@
         text-align: center;
       }
 
-      .screenshot-image {
-        min-height: 0;
-        padding: 0;
-        border: 0;
-        background: transparent;
-      }
-
       .screenshot-slot figcaption {
         max-width: 24ch;
       }
@@ -627,10 +685,154 @@
         border-radius: 14px;
       }
 
-      .screenshot-image img {
-        max-height: none;
+      .download-panel {
+        display: grid;
+        grid-template-columns: minmax(0, 1.15fr) minmax(260px, 0.85fr);
+        gap: 24px;
+        align-items: center;
+        padding: 24px;
+        border: 1px solid rgba(15, 118, 110, 0.16);
+        border-radius: 24px;
+        background: linear-gradient(145deg, rgba(15, 118, 110, 0.09), rgba(255, 255, 255, 0.88));
+      }
+
+      .download-panel h3 {
+        margin: 9px 0 8px;
+        font-family: "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+        font-size: 1.55rem;
+        letter-spacing: -0.02em;
+      }
+
+      .download-panel p {
+        margin: 0;
+      }
+
+      .file-badge {
+        display: inline-flex;
+        padding: 6px 10px;
+        border-radius: 999px;
+        background: rgba(15, 118, 110, 0.1);
+        color: var(--accent);
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .download-actions,
+      .sample-actions {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 12px;
+        margin-top: 18px;
+      }
+
+      .file-details {
+        display: grid;
+        grid-template-columns: max-content minmax(0, 1fr);
+        gap: 9px 13px;
+        margin: 0;
+        padding: 18px;
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.76);
+        border: 1px solid rgba(29, 35, 43, 0.08);
+      }
+
+      .file-details dt {
+        color: var(--muted);
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+
+      .file-details dd {
+        min-width: 0;
+        margin: 0;
+        font-size: 0.91rem;
+        font-weight: 650;
+        overflow-wrap: anywhere;
+      }
+
+      .file-details code {
+        padding: 0;
+        background: transparent;
+        font-size: 0.78rem;
+        font-weight: 600;
+        word-break: break-all;
+      }
+
+      .install-steps {
+        margin-top: 18px;
+      }
+
+      .settings-paths {
+        margin: 10px 0 0;
+      }
+
+      .settings-paths strong {
+        display: inline;
+        font-size: inherit;
+      }
+
+      .security-note {
+        border-left-color: #b91c1c;
+        background: rgba(185, 28, 28, 0.07);
+      }
+
+      .sample-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+        margin-top: 18px;
+      }
+
+      .sample-card {
+        overflow: hidden;
+        border: 1px solid rgba(29, 35, 43, 0.1);
+        border-radius: 24px;
+        background: rgba(255, 255, 255, 0.88);
+        box-shadow: 0 12px 28px rgba(18, 26, 33, 0.05);
+      }
+
+      .sample-media {
+        display: block;
+        padding: 12px;
+        border-bottom: 1px solid rgba(29, 35, 43, 0.08);
+        background: linear-gradient(145deg, rgba(15, 118, 110, 0.08), rgba(217, 119, 6, 0.06));
+      }
+
+      .sample-media img {
+        display: block;
+        width: 100%;
+        height: 280px;
         border-radius: 16px;
-        box-shadow: 0 12px 30px rgba(18, 26, 33, 0.08);
+        background: #eef0ed;
+        object-fit: contain;
+      }
+
+      .sample-card-body {
+        padding: 20px;
+      }
+
+      .sample-card h3 {
+        margin: 0 0 7px;
+        font-family: "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+        font-size: 1.3rem;
+        letter-spacing: -0.02em;
+      }
+
+      .sample-card p {
+        margin: 0;
+      }
+
+      .sample-card code {
+        overflow-wrap: anywhere;
+      }
+
+      .sample-note {
+        margin-top: 18px;
       }
 
       .end-nav {
@@ -651,7 +853,10 @@
         .hero-grid,
         .grid-2,
         .role-links,
-        .workflow-step {
+        .journey-list,
+        .workflow-step,
+        .download-panel,
+        .sample-grid {
           grid-template-columns: 1fr;
         }
 
@@ -677,7 +882,9 @@
           flex-wrap: wrap;
         }
 
-        .pill {
+        .guide-context {
+          padding-left: 0;
+          border-left: 0;
           white-space: normal;
         }
 
@@ -705,6 +912,28 @@
         .nav-link {
           padding-inline: 11px;
         }
+
+        .download-panel,
+        .sample-card-body {
+          padding: 18px;
+        }
+
+        .file-details {
+          grid-template-columns: 1fr;
+        }
+
+        .file-details dd + dt {
+          margin-top: 5px;
+        }
+
+        .sample-media img {
+          height: 220px;
+        }
+
+        .sample-actions .button,
+        .download-actions .button {
+          width: 100%;
+        }
       }
 
       @media (prefers-reduced-motion: reduce) {
@@ -730,10 +959,10 @@
         </div>
         <div class="topbar-actions">
           <nav class="site-nav" aria-label="Guide navigation">
-            <a class="nav-link" href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>Web dashboard</a>
             <a class="nav-link" href="{{ '/android-app/' | relative_url }}"{% if page.url contains '/android-app/' %} aria-current="page"{% endif %}>Android app</a>
+            <a class="nav-link" href="{{ '/web-dashboard/' | relative_url }}"{% if page.url contains '/web-dashboard/' %} aria-current="page"{% endif %}>Web dashboard</a>
           </nav>
-          <div class="pill">{{ page.guide_label | default: "Built for the officer workflow" }}</div>
+          <div class="guide-context">{{ page.guide_label | default: "Operations officer workflow" }}</div>
         </div>
       </header>
 
