@@ -160,48 +160,36 @@ guide_label: Step 2 - Operations Officer
       </figure>
     </article>
 
-    <article class="workflow-step workflow-step-stack">
+    <article class="workflow-step">
       <div class="workflow-copy">
         <span class="step-label">Step 5</span>
         <h3>Compare AI routes</h3>
         <p>Review the AI-generated diversion for Service 45 Direction 1. Make adjustments where necessary so the route bypasses the Lor Ah Soo obstruction while continuing towards Yio Chu Kang. You can modify the proposed route or add custom waypoints.</p>
       </div>
-      <figure class="screenshot-slot screenshot-image">
-        <img src="{{ '/assets/webapp/ss7.png' | relative_url }}" alt="Operations Officer AI route comparison screen for the diversion workflow" loading="lazy" />
-      </figure>
     </article>
 
-    <article class="workflow-step workflow-step-stack">
+    <article class="workflow-step">
       <div class="workflow-copy">
         <span class="step-label">Step 6</span>
         <h3>Review directions</h3>
         <p>Confirm that the diversion leaves the original Service 45 route before the obstruction and rejoins the Direction 1 corridor towards Yio Chu Kang after it is safe to do so.</p>
       </div>
-      <figure class="screenshot-slot screenshot-image">
-        <img src="{{ '/assets/webapp/ss8.png' | relative_url }}" alt="Operations Officer directions screen showing the approved diversion route review" loading="lazy" />
-      </figure>
     </article>
 
-    <article class="workflow-step workflow-step-stack">
+    <article class="workflow-step">
       <div class="workflow-copy">
         <span class="step-label">Step 7</span>
         <h3>Check affected buses</h3>
         <p>Review the bus services affected by the disruption and notify the relevant Bus Captains of the approved diversion.</p>
       </div>
-      <figure class="screenshot-slot screenshot-image">
-        <img src="{{ '/assets/webapp/ss9.png' | relative_url }}" alt="Operations Officer affected buses screen for the diversion workflow" loading="lazy" />
-      </figure>
     </article>
 
-    <article class="workflow-step workflow-step-stack">
+    <article class="workflow-step">
       <div class="workflow-copy">
         <span class="step-label">Step 8</span>
         <h3>Approve and dispatch</h3>
         <p>Confirm that the summary identifies Service 45 and vehicle <code>SBS7530C</code>, then approve the route. The system notifies the Bus Captain and sends passenger notifications through the designated Telegram channel: <code>https://t.me/busreroute_huawei_hackathon</code>.</p>
       </div>
-      <figure class="screenshot-slot screenshot-image">
-        <img src="{{ '/assets/webapp/ss10.png' | relative_url }}" alt="Operations Officer approve and dispatch screen for the diversion workflow" loading="lazy" />
-      </figure>
     </article>
   </div>
 </section>
