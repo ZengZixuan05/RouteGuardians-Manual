@@ -601,6 +601,40 @@
         min-width: 0;
       }
 
+      .workflow-checkpoint {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 20px;
+        align-items: center;
+        min-width: 0;
+        padding: 22px 24px;
+        border: 1px solid rgba(217, 119, 6, 0.24);
+        border-left: 5px solid var(--accent-2);
+        border-radius: 22px;
+        background: linear-gradient(135deg, rgba(217, 119, 6, 0.12), rgba(255, 255, 255, 0.94));
+      }
+
+      .workflow-checkpoint .workflow-kicker {
+        margin-bottom: 8px;
+        color: var(--accent-2);
+      }
+
+      .workflow-checkpoint h3 {
+        margin: 0 0 7px;
+        font-family: "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+        font-size: 1.35rem;
+        letter-spacing: -0.02em;
+      }
+
+      .workflow-checkpoint p {
+        max-width: 65ch;
+        margin: 0;
+      }
+
+      .workflow-checkpoint .button {
+        white-space: nowrap;
+      }
+
       .workflow-step {
         display: grid;
         grid-template-columns: minmax(0, 1.15fr) minmax(250px, 0.85fr);
@@ -952,6 +986,14 @@
           flex-direction: column;
         }
 
+        .workflow-checkpoint {
+          grid-template-columns: 1fr;
+        }
+
+        .workflow-checkpoint .button {
+          justify-self: start;
+        }
+
         .role-link {
           padding-inline: 2px;
         }
@@ -976,8 +1018,14 @@
 
         .hero,
         .section,
-        .workflow-step {
+        .workflow-step,
+        .workflow-checkpoint {
           padding: 18px;
+        }
+
+        .workflow-checkpoint .button {
+          width: 100%;
+          white-space: normal;
         }
 
         .nav-link {

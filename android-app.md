@@ -329,11 +329,20 @@ guide_label: Start here - Android app
       </figure>
     </article>
 
-    <article class="workflow-step">
+    <aside class="workflow-checkpoint" aria-labelledby="dashboard-checkpoint-title">
+      <div>
+        <span class="workflow-kicker">Required checkpoint before Step 7</span>
+        <h3 id="dashboard-checkpoint-title">Pause and complete the Operations Officer workflow</h3>
+        <p>The submitted incident must be reviewed in the web dashboard before the app can receive an approved route. Open the Operations Officer guide, use its live-dashboard link, find this incident, approve and dispatch the diversion route, then return here and continue with Step 7.</p>
+      </div>
+      <a class="button" href="{{ '/web-dashboard/' | relative_url }}">Open Operations Officer guide <span aria-hidden="true">&rarr;</span></a>
+    </aside>
+
+    <article class="workflow-step" id="track-response">
       <div class="workflow-copy">
         <span class="step-label">Step 7</span>
-        <h3>Track the command-centre response</h3>
-        <p>After submitting, continue with the <a class="text-link" href="{{ '/web-dashboard/' | relative_url }}">Operations Officer dashboard workflow</a> so the incident can be reviewed and dispatched. Then return to the report to see its status, submitted photographs, and officer-message history. Pull to refresh or tap <strong>Check Now</strong> to request the latest decision and route information.</p>
+        <h3>Refresh and check the officer response</h3>
+        <p>After completing the required Operations Officer checkpoint above, return to TransitOps and open <strong>My Incidents</strong>. Pull to refresh, select the report you submitted, and tap <strong>Check Now</strong> to load its latest status, officer messages, and route information.</p>
       </div>
       <figure class="screenshot-slot screenshot-image">
         <img
@@ -348,8 +357,8 @@ guide_label: Start here - Android app
       <div class="workflow-copy">
         <span class="step-label">Step 8</span>
         <h3>Open an approved diversion route</h3>
-        <p>After the operations officer approves a diversion, tap <strong>Go to Route</strong>. Use <strong>Overview</strong> to frame the complete route, or <strong>Follow Me</strong> when device location is available.</p>
-        <p>If the route is rejected, the report returns to a reviewing state and <strong>Go to Route</strong> is no longer shown.</p>
+        <p>When the approved route appears, tap <strong>Go to Route</strong>. Use <strong>Overview</strong> to frame the complete route, or <strong>Follow Me</strong> when device location is available.</p>
+        <p>If <strong>Go to Route</strong> is not available, confirm that the Operations Officer workflow was completed, then return to Step 7 and tap <strong>Check Now</strong> again.</p>
       </div>
       <figure class="screenshot-slot screenshot-image">
         <img
