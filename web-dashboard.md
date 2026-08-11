@@ -189,12 +189,15 @@ guide_label: Step 2 - Operations Officer
       </figure>
     </article>
 
-    <article class="workflow-step">
+    <article class="workflow-step workflow-step-stack">
       <div class="workflow-copy">
         <span class="step-label">Step 8</span>
         <h3>Approve and dispatch</h3>
         <p>Review the diversion summary and approve the confirmed route. The system notifies the Bus Captain and sends passenger notifications through the designated Telegram channel: <code>https://t.me/busreroute_huawei_hackathon</code>.</p>
       </div>
+      <figure class="screenshot-slot screenshot-image">
+        <img src="{{ '/assets/webapp/ss10.png' | relative_url }}" alt="Operations Officer approve and dispatch screen for the diversion workflow" loading="lazy" />
+      </figure>
     </article>
   </div>
 </section>
