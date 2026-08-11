@@ -437,7 +437,7 @@
       .role-links {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 28px;
+        gap: 0;
         margin-top: 18px;
         border-top: 1px solid var(--panel-border);
       }
@@ -447,10 +447,19 @@
         align-items: center;
         justify-content: space-between;
         gap: 16px;
-        padding: 18px 2px;
+        padding: 20px 28px;
         border-bottom: 1px solid var(--panel-border);
         text-decoration: none;
         transition: color 160ms ease;
+      }
+
+      .role-link:first-child {
+        padding-left: 2px;
+      }
+
+      .role-link + .role-link {
+        padding-right: 2px;
+        border-left: 1px solid var(--panel-border);
       }
 
       .role-link:hover {
@@ -688,6 +697,35 @@
         border-radius: 14px;
       }
 
+      .screenshot-slot.screenshot-image {
+        align-self: center;
+        min-height: 0;
+        padding: 0;
+        overflow: visible;
+        border: 0;
+        background: transparent;
+      }
+
+      .screenshot-slot.screenshot-image img {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-height: 640px;
+        margin: 0 auto;
+        object-fit: contain;
+        border-radius: 18px;
+        box-shadow: 0 18px 38px rgba(18, 26, 33, 0.13);
+      }
+
+      .screenshot-slot.screenshot-image img[src*="/assets/android/"] {
+        width: auto;
+        max-width: min(100%, 360px);
+      }
+
+      .screenshot-slot.screenshot-image img + img {
+        margin-top: 16px;
+      }
+
       .download-panel {
         display: grid;
         grid-template-columns: minmax(0, 1.15fr) minmax(260px, 0.85fr);
@@ -897,8 +935,20 @@
           flex-direction: column;
         }
 
+        .role-link {
+          padding-inline: 2px;
+        }
+
+        .role-link + .role-link {
+          border-left: 0;
+        }
+
         .screenshot-slot {
           min-height: 260px;
+        }
+
+        .screenshot-slot.screenshot-image {
+          min-height: 0;
         }
       }
 
