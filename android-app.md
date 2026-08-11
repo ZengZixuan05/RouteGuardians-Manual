@@ -353,7 +353,7 @@ guide_label: Start here - Android app
       </div>
       <figure class="screenshot-slot screenshot-image">
         <img
-          src="{{ '/assets/android/open-approvedroute.jpg' | relative_url }}"
+          src="{{ '/assets/android/open-approvedroute.png' | relative_url }}"
           alt="TransitOps guest open already approved route"
           loading="lazy"
         />
