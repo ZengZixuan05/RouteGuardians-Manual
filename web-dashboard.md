@@ -238,7 +238,7 @@ guide_label: Step 2 - Web dashboard
 <section class="section end-nav">
   <div>
     <h2>Complete the end-to-end test</h2>
-    <p style="margin: 0;">Return to the Android app, refresh the submitted report, and open the approved diversion route.</p>
+    <p style="margin: 0;">Return to Bus Captain Step 6 and open <strong>My Incidents</strong>. Refresh the list, select the submitted report, and continue to check its latest status and approved diversion route.</p>
   </div>
-  <a class="button" href="{{ '/android-app/' | relative_url }}#guest-workflow">Return to the Android guide <span aria-hidden="true">&rarr;</span></a>
+  <a class="button" href="{{ '/android-app/' | relative_url }}#submit-incident">Return to Bus Captain Step 6 <span aria-hidden="true">&rarr;</span></a>
 </section>
