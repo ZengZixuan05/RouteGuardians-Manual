@@ -131,6 +131,9 @@ guide_label: Step 2 - Operations Officer
         <h3>Select the submitted incident</h3>
         <p>Select an incident from the list at the bottom-left of the dashboard. For this demonstration, choose the SVC 93 incident at Lor Ah Soo that was submitted through Android or the iOS web app.</p>
       </div>
+      <figure class="screenshot-slot screenshot-image">
+        <img src="{{ '/assets/ss2.png' | relative_url }}" alt="Operations Officer dashboard showing the submitted incident selected from the feed" loading="lazy" />
+      </figure>
     </article>
 
     <article class="workflow-step">
@@ -139,6 +142,12 @@ guide_label: Step 2 - Operations Officer
         <h3>Review the incident</h3>
         <p>Click <strong>Review</strong> to examine the incident details. Review the photos submitted by the Bus Captain and confirm that they match the reported situation.</p>
       </div>
+      <figure class="screenshot-slot screenshot-image screenshot-stack">
+        <div class="grid-2">
+          <img src="{{ '/assets/ss3.png' | relative_url }}" alt="Operations Officer review screen showing incident details and route information" loading="lazy" />
+          <img src="{{ '/assets/ss4.png' | relative_url }}" alt="Operations Officer review screen showing the second supporting screenshot for the incident review" loading="lazy" />
+        </div>
+      </figure>
     </article>
 
     <article class="workflow-step">
