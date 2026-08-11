@@ -122,7 +122,7 @@ guide_label: Step 2 - Operations Officer
         <p>Open TransitOps in the browser and sign in with <code>officer@officer.com</code> and password <code>12345678</code>. The dashboard opens to the incident feed.</p>
       </div>
       <figure class="screenshot-slot screenshot-image">
-        <img src="{{ '/assets/ss1.png' | relative_url }}" alt="Operations Officer sign-in screen" />
+        <img src="{{ '/assets/webapp/ss1.png' | relative_url }}" alt="Operations Officer sign-in screen" />
       </figure>
     </article>
 
@@ -133,7 +133,7 @@ guide_label: Step 2 - Operations Officer
         <p>Select an incident from the list at the bottom-left of the dashboard. For this demonstration, choose the SVC 45 incident at Lor Ah Soo / Upper Paya Lebar Road that was submitted through the chosen Bus Captain app.</p>
       </div>
       <figure class="screenshot-slot screenshot-image">
-        <img src="{{ '/assets/ss2.png' | relative_url }}" alt="Operations Officer dashboard showing the submitted incident selected from the feed" loading="lazy" />
+        <img src="{{ '/assets/webapp/ss2.png' | relative_url }}" alt="Operations Officer dashboard showing the submitted incident selected from the feed" loading="lazy" />
       </figure>
     </article>
 
@@ -144,8 +144,8 @@ guide_label: Step 2 - Operations Officer
         <p>Click <strong>Review</strong> to examine the incident details. Confirm Service <strong>45</strong>, vehicle <code>SBS7530C</code>, <strong>Direction 1 towards Yio Chu Kang</strong>, and the Lor Ah Soo / Upper Paya Lebar Road location. Review the photos and confirm that they match the reported situation.</p>
       </div>
       <figure class="screenshot-slot screenshot-image screenshot-stack">
-        <img src="{{ '/assets/ss3.png' | relative_url }}" alt="Operations Officer review screen showing incident details and route information" loading="lazy" />
-        <img src="{{ '/assets/ss4.png' | relative_url }}" alt="Operations Officer review screen showing the second supporting screenshot for the incident review" loading="lazy" />
+        <img src="{{ '/assets/webapp/ss3.png' | relative_url }}" alt="Operations Officer review screen showing incident details and route information" loading="lazy" />
+        <img src="{{ '/assets/webapp/ss4.png' | relative_url }}" alt="Operations Officer review screen showing the second supporting screenshot for the incident review" loading="lazy" />
       </figure>
     </article>
 
@@ -212,7 +212,7 @@ guide_label: Step 2 - Operations Officer
         <p>Open TransitOps in the browser and sign in with <code>admin@officer.com</code> and password <code>12345678</code>. The dashboard opens to the access-management area.</p>
       </div>
       <figure class="screenshot-slot screenshot-image">
-        <img src="{{ '/assets/admin1.png' | relative_url }}" alt="Admin sign-in screen" />
+        <img src="{{ '/assets/webapp/admin1.png' | relative_url }}" alt="Admin sign-in screen" />
       </figure>
     </article>
 
@@ -223,8 +223,8 @@ guide_label: Step 2 - Operations Officer
         <p>Open the user-management panel and choose whether to add an administrator or an officer. Enter the user details, assign the correct role, and confirm the new account.</p>
       </div>
       <figure class="screenshot-slot screenshot-image">
-        <img src="{{ '/assets/admin2.png' | relative_url }}" alt="Admin user-management screen" />
-        <img src="{{ '/assets/admin3.png' | relative_url }}" alt="Admin user-creation screen" />
+        <img src="{{ '/assets/webapp/admin2.png' | relative_url }}" alt="Admin user-management screen" />
+        <img src="{{ '/assets/webapp/admin3.png' | relative_url }}" alt="Admin user-creation screen" />
       </figure>
     </article>
 
