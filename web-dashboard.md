@@ -114,11 +114,6 @@ guide_label: Step 2 - Operations Officer
     <a class="workflow-jump" href="#admin-workflow">Go to admin workflow &darr;</a>
   </div>
 
-  <div class="callout" style="margin: 0 0 18px;">
-    <strong>Follow the current Service 45 record</strong>
-    <span class="muted">The screenshots below are interface references from an earlier seeded report. Ignore any embedded service, vehicle, route, weather, or severity value that differs. Select the newly submitted SVC 45 incident and use the written Direction 1 route details on this page.</span>
-  </div>
-
   <div class="workflow-list">
     <article class="workflow-step">
       <div class="workflow-copy">

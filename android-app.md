@@ -237,11 +237,6 @@ guide_label: Step 1 - Android app
     <a class="workflow-jump" href="#admin-workflow">Go to admin workflow &darr;</a>
   </div>
 
-  <div class="callout">
-    <strong>Current Service 45 values override legacy screenshots</strong>
-    <span class="muted">The screenshots below show where controls appear and may contain values from an earlier seeded report. Ignore any embedded service, vehicle, route, weather, or severity value that differs. For this judging run, use Service 45, vehicle SBS7530C, and Direction 1 from Upper East Coast Terminal towards Yio Chu Kang. The expected-output panel above is the source of truth.</span>
-  </div>
-
   <div class="workflow-list">
     <article class="workflow-step">
       <div class="workflow-copy">
