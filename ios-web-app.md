@@ -25,16 +25,32 @@ guide_label: Step 3 - iOS web app
       </div>
     </div>
 
-    <aside class="card quickfacts" aria-label="iOS web app reference documents">
+    <aside class="card quickfacts" aria-label="iOS web app demo credentials">
       <div class="quickfact">
-        <small>Primary reference</small>
-        <strong><a class="text-link" href="{{ '/USER_GUIDE.md' | relative_url }}">USER_GUIDE.md</a></strong>
-        <span class="muted">Screen-by-screen captain and administrator navigation.</span>
+        <small>Guest / Bus Captain</small>
+        <div class="credential-lines">
+          <div class="credential-line">
+            <span>Email</span>
+            <code>guest@guest.com</code>
+          </div>
+          <div class="credential-line">
+            <span>Password</span>
+            <code>guest1234</code>
+          </div>
+        </div>
       </div>
       <div class="quickfact">
-        <small>Technical reference</small>
-        <strong><a class="text-link" href="{{ '/README%20copy.md' | relative_url }}">README copy.md</a></strong>
-        <span class="muted">Backend parity, deployment notes, and validation commands.</span>
+        <small>Administrator</small>
+        <div class="credential-lines">
+          <div class="credential-line">
+            <span>Email</span>
+            <code>admin@admin.com</code>
+          </div>
+          <div class="credential-line">
+            <span>Password</span>
+            <code>admin</code>
+          </div>
+        </div>
       </div>
       <div class="quickfact">
         <small>Best judging link</small>
@@ -57,7 +73,7 @@ guide_label: Step 3 - iOS web app
   </p>
   <div class="callout">
     <strong>What remains the same</strong>
-    <span class="muted">The web app uses the same Supabase authentication users, UUID profile linkage, database tables, Storage bucket, role routing, incident lifecycle, and captain/admin permissions described in the README copy.</span>
+    <span class="muted">The web app uses the same Supabase authentication users, UUID profile linkage, database tables, Storage bucket, role routing, incident lifecycle, and captain/admin permissions as the native app workflow.</span>
   </div>
 </section>
 
@@ -85,7 +101,7 @@ guide_label: Step 3 - iOS web app
     </li>
     <li class="step">
       <strong>Use configured TransitOps accounts</strong>
-      <p>Sign in with an active Bus Captain or Administrator account linked in the backend. A valid Supabase login must also have the matching active TransitOps profile.</p>
+      <p>For this test, sign in as Guest / Bus Captain with <code>guest@guest.com</code> and password <code>guest1234</code>, or as Administrator with <code>admin@admin.com</code> and password <code>admin</code>. A valid Supabase login must also have the matching active TransitOps profile.</p>
     </li>
   </ol>
 </section>
@@ -110,8 +126,8 @@ guide_label: Step 3 - iOS web app
     </a>
   </div>
   <div class="callout">
-    <strong>Workflow source</strong>
-    <span class="muted">The steps below condense the detailed navigation in <a class="text-link" href="{{ '/USER_GUIDE.md' | relative_url }}">USER_GUIDE.md</a> so this page matches the manual tabs. Add your screenshots beside each step afterwards.</span>
+    <strong>Screenshot note</strong>
+    <span class="muted">The steps below match the manual-tab style and leave space for the screenshots you plan to add afterwards.</span>
   </div>
 </section>
 
@@ -130,7 +146,7 @@ guide_label: Step 3 - iOS web app
       <div class="workflow-copy">
         <span class="step-label">Step 1</span>
         <h3>Launch, choose language, and sign in</h3>
-        <p>Open the web app. On the first visit, choose English, Chinese, Malay, or Tamil. Sign in with a Bus Captain account; TransitOps opens <strong>My Incidents</strong> after it confirms the linked profile is active.</p>
+        <p>Open the web app. On the first visit, choose English, Chinese, Malay, or Tamil. Sign in with <code>guest@guest.com</code> and password <code>guest1234</code>; TransitOps opens <strong>My Incidents</strong> after it confirms the linked Bus Captain profile is active.</p>
       </div>
       <figure class="screenshot-slot">
         <figcaption>
@@ -264,7 +280,7 @@ guide_label: Step 3 - iOS web app
       <div class="workflow-copy">
         <span class="step-label">Step 1</span>
         <h3>Sign in as Administrator</h3>
-        <p>Sign in with an administrator account. TransitOps routes this role to <strong>Admin Portal</strong> instead of <strong>My Incidents</strong>.</p>
+        <p>Sign in with <code>admin@admin.com</code> and password <code>admin</code>. TransitOps routes this role to <strong>Admin Portal</strong> instead of <strong>My Incidents</strong>.</p>
       </div>
       <figure class="screenshot-slot">
         <figcaption>
@@ -314,7 +330,7 @@ guide_label: Step 3 - iOS web app
   <div class="grid-2">
     <div class="callout" style="margin-top: 0;">
       <strong>Backend parity</strong>
-      <span class="muted">It expects the same <code>profiles</code>, <code>captain_profiles</code>, <code>incidents</code>, <code>incident_messages</code>, <code>diversion_routes</code>, and public <code>incident-photos</code> bucket described in the README copy.</span>
+      <span class="muted">It expects the same <code>profiles</code>, <code>captain_profiles</code>, <code>incidents</code>, <code>incident_messages</code>, <code>diversion_routes</code>, and public <code>incident-photos</code> bucket used by the existing TransitOps backend.</span>
     </div>
     <div class="callout" style="margin-top: 0;">
       <strong>Web-specific substitutions</strong>

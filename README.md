@@ -13,7 +13,7 @@ RouteGuardians Manual contains the complete TransitOps demonstration flow: a Bus
 
 ## iOS web app note
 
-Publishing a native iOS build through TestFlight or the App Store requires paid Apple Developer Program access. For judging, the project includes a browser-based TransitOps Web version that simulates the iOS Bus Captain experience while using the same backend workflow. See [README copy.md](./README%20copy.md) for implementation notes and [USER_GUIDE.md](./USER_GUIDE.md) for the complete web-app user guide.
+Publishing a native iOS build through TestFlight or the App Store requires paid Apple Developer Program access. For judging, the project includes a browser-based TransitOps Web version that simulates the iOS Bus Captain experience while using the same backend workflow.
 
 ## Android prototype download
 
