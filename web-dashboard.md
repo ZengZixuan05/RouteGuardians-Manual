@@ -17,14 +17,19 @@ guide_label: Step 2 - Web dashboard
         Follow the Operations Officer workflow to review the report, compare diversion options,
         approve the route, and dispatch notifications. Use the Admin workflow separately to manage dashboard users.
       </p>
+      <p class="dashboard-access">
+        <strong>Live web dashboard:</strong>
+        <a
+          class="text-link"
+          href="https://huawei-hackathon26.vercel.app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >huawei-hackathon26.vercel.app <span aria-hidden="true">&nearr;</span></a>
+      </p>
       <div class="tag-row" style="margin-top: 22px;">
         <span class="tag">Incident review</span>
         <span class="tag">Route comparison</span>
         <span class="tag">Dispatch approval</span>
-      </div>
-      <div class="hero-actions">
-        <a class="button" href="#officer-workflow">Start officer workflow <span aria-hidden="true">&darr;</span></a>
-        <a class="button button-secondary" href="#admin-workflow">Jump to admin workflow</a>
       </div>
     </div>
 
