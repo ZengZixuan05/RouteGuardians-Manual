@@ -178,12 +178,15 @@ guide_label: Step 2 - Operations Officer
       </figure>
     </article>
 
-    <article class="workflow-step">
+    <article class="workflow-step workflow-step-stack">
       <div class="workflow-copy">
         <span class="step-label">Step 7</span>
         <h3>Check affected buses</h3>
         <p>Review the bus services affected by the disruption and notify the relevant Bus Captains of the approved diversion.</p>
       </div>
+      <figure class="screenshot-slot screenshot-image">
+        <img src="{{ '/assets/webapp/ss9.png' | relative_url }}" alt="Operations Officer affected buses screen for the diversion workflow" loading="lazy" />
+      </figure>
     </article>
 
     <article class="workflow-step">
