@@ -107,6 +107,10 @@
         gap: 10px;
       }
 
+      .site-nav {
+        position: relative;
+      }
+
       .nav-link {
         display: inline-flex;
         align-items: center;
@@ -129,6 +133,62 @@
       .nav-link[aria-current="page"] {
         color: var(--accent);
         background: rgba(15, 118, 110, 0.1);
+      }
+
+      .nav-menu {
+        position: relative;
+      }
+
+      .nav-menu summary {
+        list-style: none;
+        cursor: pointer;
+      }
+
+      .nav-menu summary::-webkit-details-marker {
+        display: none;
+      }
+
+      .nav-summary {
+        gap: 8px;
+      }
+
+      .nav-summary::after {
+        content: "";
+        width: 7px;
+        height: 7px;
+        margin-left: 2px;
+        border-right: 2px solid currentColor;
+        border-bottom: 2px solid currentColor;
+        transform: rotate(45deg) translateY(-2px);
+        transition: transform 160ms ease;
+      }
+
+      .nav-menu[open] .nav-summary::after {
+        transform: rotate(225deg) translate(-1px, -1px);
+      }
+
+      .nav-menu[data-current="true"] .nav-summary {
+        color: var(--accent);
+        background: rgba(15, 118, 110, 0.1);
+      }
+
+      .nav-dropdown {
+        position: absolute;
+        z-index: 5;
+        top: calc(100% + 8px);
+        right: 0;
+        display: grid;
+        min-width: 220px;
+        padding: 8px;
+        border: 1px solid var(--panel-border);
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.96);
+        box-shadow: 0 18px 42px rgba(18, 26, 33, 0.14);
+      }
+
+      .nav-dropdown .nav-link {
+        justify-content: flex-start;
+        border-radius: 12px;
       }
 
       .hero {
@@ -991,6 +1051,22 @@
           flex-wrap: wrap;
         }
 
+        .nav-menu {
+          width: 100%;
+        }
+
+        .nav-summary {
+          justify-content: space-between;
+          width: 100%;
+        }
+
+        .nav-dropdown {
+          position: static;
+          min-width: 0;
+          margin-top: 6px;
+          box-shadow: none;
+        }
+
         .guide-context {
           padding-left: 0;
           border-left: 0;
@@ -1094,9 +1170,14 @@
         </div>
         <div class="topbar-actions">
           <nav class="site-nav" aria-label="Guide navigation">
-            <a class="nav-link" href="{{ '/android-app/' | relative_url }}"{% if page.url contains '/android-app/' %} aria-current="page"{% endif %}>Android app</a>
-            <a class="nav-link" href="{{ '/web-dashboard/' | relative_url }}"{% if page.url contains '/web-dashboard/' %} aria-current="page"{% endif %}>Web dashboard</a>
-            <a class="nav-link" href="{{ '/ios-web-app/' | relative_url }}"{% if page.url contains '/ios-web-app/' %} aria-current="page"{% endif %}>iOS web app</a>
+            <details class="nav-menu"{% if page.url == '/' or page.url contains '/android-app/' or page.url contains '/ios-web-app/' %} data-current="true"{% endif %}>
+              <summary class="nav-link nav-summary">Bus Captain workflow</summary>
+              <div class="nav-dropdown">
+                <a class="nav-link" href="{{ '/android-app/' | relative_url }}"{% if page.url contains '/android-app/' %} aria-current="page"{% endif %}>Android app</a>
+                <a class="nav-link" href="{{ '/ios-web-app/' | relative_url }}"{% if page.url contains '/ios-web-app/' %} aria-current="page"{% endif %}>iOS web app</a>
+              </div>
+            </details>
+            <a class="nav-link" href="{{ '/web-dashboard/' | relative_url }}"{% if page.url contains '/web-dashboard/' %} aria-current="page"{% endif %}>Operations Officer workflow</a>
           </nav>
           <div class="guide-context">{{ page.guide_label | default: "Operations officer workflow" }}</div>
         </div>

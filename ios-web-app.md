@@ -4,16 +4,16 @@ description: TransitOps iOS-style web app workflow, installation notes, and capt
 layout: default
 permalink: /ios-web-app/
 header_subtitle: TransitOps iOS Web App Walkthrough
-guide_label: Step 3 - iOS web app
+guide_label: Step 1 - iOS web app
 ---
 
 <section class="hero">
   <div class="hero-grid">
     <div>
-      <div class="eyebrow">Step 3 - iOS web app</div>
+      <div class="eyebrow">Step 1 - iOS web app</div>
       <h1>TransitOps iOS Web App Guide</h1>
       <p class="lead">
-        TransitOps Web is the iPhone-friendly version of the Bus Captain iOS experience.
+        TransitOps Web is the iPhone-friendly Step 1 version of the Bus Captain iOS experience.
         Publishing a native iOS build through TestFlight or the App Store requires paid
         Apple Developer Program access, so this project provides a browser-based version
         that judges can open immediately on iPhone, iPad, desktop, or Android.
@@ -60,11 +60,6 @@ guide_label: Step 3 - iOS web app
             <code>admin</code>
           </div>
         </div>
-      </div>
-      <div class="quickfact">
-        <small>Best judging link</small>
-        <strong><a class="text-link" href="https://huawei-webapp.vercel.app/" target="_blank" rel="noopener noreferrer">huawei-webapp.vercel.app</a></strong>
-        <span class="muted">Camera, location, microphone, and app-like installation work best over HTTPS.</span>
       </div>
     </aside>
   </div>
@@ -306,8 +301,8 @@ guide_label: Step 3 - iOS web app
 
 <section class="section end-nav">
   <div>
-    <h2>Finish the demonstration</h2>
-    <p style="margin: 0;">Use this page as the screenshot checklist for the iOS-style web app, then return to the dashboard or Android guide as needed.</p>
+    <h2>Continue to Step 2</h2>
+    <p style="margin: 0;">After submitting an incident from the iOS web app, open the Operations Officer dashboard to review and dispatch the route.</p>
   </div>
-  <a class="button" href="{{ '/web-dashboard/' | relative_url }}">Return to web dashboard guide <span aria-hidden="true">&rarr;</span></a>
+  <a class="button" href="{{ '/web-dashboard/' | relative_url }}">Open Operations Officer guide <span aria-hidden="true">&rarr;</span></a>
 </section>

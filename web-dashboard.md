@@ -4,16 +4,16 @@ description: TransitOps Operations Officer incident review, diversion approval, 
 layout: default
 permalink: /web-dashboard/
 header_subtitle: TransitOps Operations Officer Walkthrough
-guide_label: Step 2 - Web dashboard
+guide_label: Step 2 - Operations Officer
 ---
 
 <section class="hero">
   <div class="hero-grid">
     <div>
-      <div class="eyebrow">Step 2 - Web dashboard</div>
+      <div class="eyebrow">Step 2 - Operations Officer</div>
       <h1>TransitOps Operations Officer Guide</h1>
       <p class="lead">
-        Continue here after a Bus Captain has submitted an incident through the Android app.
+        Continue here after a Bus Captain has submitted an incident through either Step 1 mobile app.
         Follow the Operations Officer workflow to review the report, compare diversion options,
         approve the route, and dispatch notifications. Use the Admin workflow separately to manage dashboard users.
       </p>
@@ -70,11 +70,11 @@ guide_label: Step 2 - Web dashboard
 
 <section class="section" aria-labelledby="prerequisite-title">
   <span class="workflow-kicker">Before you begin</span>
-  <h2 id="prerequisite-title">Create the incident in the Android app first</h2>
-  <p>The dashboard is the second part of the demonstration. Sign in as Guest / Bus Captain in the Android app, submit the prepared SVC 93 incident, and then locate that report in the active incident feed.</p>
+  <h2 id="prerequisite-title">Create the incident in a Step 1 mobile app first</h2>
+  <p>The dashboard is the second part of the demonstration. Sign in as Guest / Bus Captain in either the Android app or the iOS web app, submit the prepared SVC 93 incident, and then locate that report in the active incident feed.</p>
   <div class="callout">
     <strong>Need to create the report?</strong>
-    <span class="muted"><a class="text-link" href="{{ '/android-app/' | relative_url }}#guest-workflow">Open the Bus Captain workflow</a>, submit the report, and then return to this page.</span>
+    <span class="muted"><a class="text-link" href="{{ '/android-app/' | relative_url }}#guest-workflow">Open the Android Bus Captain workflow</a> or <a class="text-link" href="{{ '/ios-web-app/' | relative_url }}#captain-workflow">open the iOS web app captain workflow</a>, submit the report, and then return to this page.</span>
   </div>
 </section>
 
@@ -99,7 +99,7 @@ guide_label: Step 2 - Web dashboard
   </div>
   <div class="callout">
     <strong>Demo note</strong>
-    <span class="muted">The officer workflow uses the SVC 93 accident submitted from the Android app.</span>
+    <span class="muted">The officer workflow uses the SVC 93 accident submitted from either Step 1 mobile app.</span>
   </div>
 </section>
 
@@ -129,7 +129,7 @@ guide_label: Step 2 - Web dashboard
       <div class="workflow-copy">
         <span class="step-label">Step 2</span>
         <h3>Select the submitted incident</h3>
-        <p>Select an incident from the list at the bottom-left of the dashboard. For this demonstration, choose the SVC 93 incident at Lor Ah Soo that was submitted through the Android app.</p>
+        <p>Select an incident from the list at the bottom-left of the dashboard. For this demonstration, choose the SVC 93 incident at Lor Ah Soo that was submitted through Android or the iOS web app.</p>
       </div>
     </article>
 
@@ -238,10 +238,10 @@ guide_label: Step 2 - Web dashboard
 <section class="section end-nav">
   <div>
     <h2>Continue testing</h2>
-    <p style="margin: 0;">Open the iOS-style web app guide for the third tab, or return to Bus Captain Step 7 after the Operations Officer approves and dispatches the route.</p>
+    <p style="margin: 0;">After the Operations Officer approves and dispatches the route, return to the Step 1 mobile app used by the Bus Captain.</p>
   </div>
   <div class="hero-actions" style="margin-top: 0;">
-    <a class="button" href="{{ '/ios-web-app/' | relative_url }}">Open iOS web app guide <span aria-hidden="true">&rarr;</span></a>
-    <a class="button button-secondary" href="{{ '/android-app/' | relative_url }}#track-response">Continue to Bus Captain Step 7</a>
+    <a class="button" href="{{ '/android-app/' | relative_url }}#track-response">Return to Android Step 7 <span aria-hidden="true">&rarr;</span></a>
+    <a class="button button-secondary" href="{{ '/ios-web-app/' | relative_url }}#captain-workflow">Return to iOS Step 1 guide</a>
   </div>
 </section>

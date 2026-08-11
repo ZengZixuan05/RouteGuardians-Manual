@@ -1,25 +1,71 @@
 ---
-title: Android App Guide
-description: Start the TransitOps workflow with the Android app
-layout: null
+title: Choose Mobile Workflow
+description: Choose Android or iOS before starting the TransitOps Bus Captain workflow
+layout: default
 permalink: /
+header_subtitle: TransitOps Workflow Launcher
+guide_label: Start - Choose mobile workflow
 ---
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="refresh" content="0; url={{ '/android-app/' | relative_url }}" />
-    <link rel="canonical" href="{{ '/android-app/' | absolute_url }}" />
-    <title>Opening the TransitOps Android App Guide</title>
-    <script>
-      window.location.replace("{{ '/android-app/' | relative_url }}");
-    </script>
-  </head>
-  <body>
-    <p>
-      Opening the TransitOps Android App Guide.
-      <a href="{{ '/android-app/' | relative_url }}">Continue to the Android app guide</a>.
-    </p>
-  </body>
-</html>
+
+<section class="hero">
+  <div class="hero-grid">
+    <div>
+      <div class="eyebrow">Start here - Bus Captain workflow</div>
+      <h1>Choose the mobile app to test</h1>
+      <p class="lead">
+        Start with the Bus Captain workflow on either Android or the iOS-style web app.
+        After the captain submits an incident, continue to the Operations Officer dashboard
+        to review, approve, and dispatch the diversion route.
+      </p>
+      <div class="tag-row" style="margin-top: 22px;">
+        <span class="tag">Step 1 mobile reporting</span>
+        <span class="tag">Step 2 officer review</span>
+        <span class="tag">End-to-end route approval</span>
+      </div>
+    </div>
+
+    <aside class="card quickfacts" aria-label="Demo order">
+      <div class="quickfact">
+        <small>Step 1</small>
+        <strong>Bus Captain submits an incident</strong>
+        <span class="muted">Choose Android or iOS web app below.</span>
+      </div>
+      <div class="quickfact">
+        <small>Step 2</small>
+        <strong>Operations Officer reviews it</strong>
+        <span class="muted">Use the web dashboard after the mobile report exists.</span>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="choose-mobile-title">
+  <span class="workflow-kicker">Step 1 options</span>
+  <h2 id="choose-mobile-title">Select Bus Captain platform</h2>
+  <p>Both mobile guides create an incident for the same Operations Officer workflow. Pick the platform you want to demonstrate first.</p>
+
+  <div class="role-links">
+    <a class="role-link" href="{{ '/android-app/' | relative_url }}">
+      <span class="role-link-copy">
+        <strong>Android app</strong>
+        <span>Install the APK, submit the sample incident, and return after officer approval.</span>
+      </span>
+      <b aria-hidden="true">&rarr;</b>
+    </a>
+    <a class="role-link" href="{{ '/ios-web-app/' | relative_url }}">
+      <span class="role-link-copy">
+        <strong>iOS web app</strong>
+        <span>Open the deployed web app, submit the incident, and follow the approved route.</span>
+      </span>
+      <b aria-hidden="true">&rarr;</b>
+    </a>
+  </div>
+</section>
+
+<section class="section end-nav">
+  <div>
+    <h2>Already submitted an incident?</h2>
+    <p style="margin: 0;">Go straight to the Operations Officer workflow when the Bus Captain report already exists.</p>
+  </div>
+  <a class="button" href="{{ '/web-dashboard/' | relative_url }}">Open Operations Officer guide <span aria-hidden="true">&rarr;</span></a>
+</section>

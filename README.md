@@ -1,10 +1,10 @@
 # RouteGuardians Manual
 
-RouteGuardians Manual contains the complete TransitOps demonstration flow: a Bus Captain creates an incident in the Android app, an Operations Officer reviews it on the web dashboard, and the captain receives the approved route in the app.
+RouteGuardians Manual contains the complete TransitOps demonstration flow: a Bus Captain creates an incident in the Android app or iOS web app, an Operations Officer reviews it on the web dashboard, and the captain receives the approved route in the mobile workflow.
 
 ## Guides
 
-- [Open the published manual](https://zengzixuan05.github.io/RouteGuardians-Manual/) (starts with the Android app)
+- [Open the published manual](https://zengzixuan05.github.io/RouteGuardians-Manual/) (starts with the Android/iOS workflow chooser)
 - [Open the published web-dashboard guide](https://zengzixuan05.github.io/RouteGuardians-Manual/web-dashboard/)
 - [Open the published iOS web-app guide](https://zengzixuan05.github.io/RouteGuardians-Manual/ios-web-app/)
 - [View the Android guide source](./android-app.md)

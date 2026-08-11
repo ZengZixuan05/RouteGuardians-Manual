@@ -4,17 +4,18 @@ description: TransitOps Android app credentials and step-by-step Bus Captain and
 layout: default
 permalink: /android-app/
 header_subtitle: TransitOps Android App Walkthrough
-guide_label: Start here - Android app
+guide_label: Step 1 - Android app
 ---
 
 <section class="hero">
   <div class="hero-grid">
     <div>
-      <div class="eyebrow">Start here - Android app manual</div>
+      <div class="eyebrow">Step 1 - Android app manual</div>
       <h1>TransitOps Android App Guide</h1>
       <p class="lead">
-        Begin with the Bus Captain workflow. The captain must submit an incident in
-        this app before the Operations Officer can review and route it on the web dashboard.
+        Begin with this Bus Captain workflow, or use the iOS web app as the alternate
+        Step 1 mobile workflow. The captain must submit an incident before the Operations
+        Officer can review and route it on the web dashboard.
         Use the Administrator workflow separately to manage Bus Captain accounts.
       </p>
       <div class="tag-row" style="margin-top: 22px;">
@@ -57,27 +58,27 @@ guide_label: Start here - Android app
 
 <section class="section" aria-labelledby="journey-title">
   <span class="workflow-kicker">Recommended test order</span>
-  <h2 id="journey-title">One incident across the app and dashboard</h2>
-  <p>Use the same sample report from start to finish. The Android app is the first step in the operational workflow.</p>
+  <h2 id="journey-title">One incident across mobile and dashboard</h2>
+  <p>Use either Step 1 mobile guide to submit the same sample report, then complete Step 2 in the Operations Officer dashboard.</p>
   <ol class="journey-list">
     <li class="journey-step">
       <span class="journey-number" aria-hidden="true">1</span>
       <div>
-        <strong>Report in the Android app</strong>
-        <p>The Bus Captain signs in as Guest, adds the two sample images, checks the details, and submits the incident.</p>
+        <strong>Report in Android or iOS</strong>
+        <p>The Bus Captain signs in as Guest, adds the two sample images, checks the details, and submits the incident from a Step 1 mobile app.</p>
       </div>
     </li>
     <li class="journey-step">
       <span class="journey-number" aria-hidden="true">2</span>
       <div>
-        <strong>Review on the web dashboard</strong>
+        <strong>Review in Step 2 dashboard</strong>
         <p>The Operations Officer opens the submitted incident, compares routes, approves a diversion, and dispatches it.</p>
       </div>
     </li>
     <li class="journey-step">
       <span class="journey-number" aria-hidden="true">3</span>
       <div>
-        <strong>Return to the Android app</strong>
+        <strong>Return to the mobile app</strong>
         <p>The Bus Captain refreshes the report, reads the officer response, and opens the approved route.</p>
       </div>
     </li>
@@ -478,8 +479,8 @@ guide_label: Start here - Android app
 
 <section class="section end-nav">
   <div>
-    <h2>Continue testing</h2>
-    <p style="margin: 0;">Return to the web-dashboard guide for the operations officer workflow.</p>
+    <h2>Continue to Step 2</h2>
+    <p style="margin: 0;">After submitting an incident from the Android app, open the Operations Officer dashboard to review and dispatch the route.</p>
   </div>
-  <a class="button" href="{{ '/web-dashboard/' | relative_url }}">Open web dashboard guide <span aria-hidden="true">&rarr;</span></a>
+  <a class="button" href="{{ '/web-dashboard/' | relative_url }}">Open Operations Officer guide <span aria-hidden="true">&rarr;</span></a>
 </section>
